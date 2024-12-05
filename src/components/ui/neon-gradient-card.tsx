@@ -68,23 +68,21 @@ interface NeonGradientCardProps {
 }
 
 const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
-  className="",
+  className,
   children,
   borderSize = 2,
   borderRadius = 20,
                                                              neonColors = {
-                                                               firstColor: "#ff00aa",  // Neon Pink
+                                                               firstColor: "#ff00aa", // Neon Pink
                                                                secondColor: "#00FFF1", // Neon Cyan
-                                                               thirdColor: "#ff1b6d",  // Neon Red
-                                                               fourthColor: "#00ff00", // Neon Green
-                                                               fifthColor: "#a0ff00",  // Neon Lime
-                                                               sixthColor: "#fffc00",  // Neon Yellow
-                                                               seventhColor: "#6a00ff", // Neon Purple
-                                                               eighthColor: "#ff0055",  // Neon Hot Pink
-                                                               ninthColor: "#0099ff",  // Neon Blue
-                                                               tenthColor: "#ff5c33",   // Neon Orange
-                                                               eleventhColor: "#ff8d00", // Neon Amber
-                                                               twelfthColor: "#00cc99", // Neon Teal
+                                                               thirdColor: "#FFD700", // Neon Gold
+                                                               fourthColor: "#32CD32", // Neon Lime Green
+                                                               fifthColor: "#FF4500", // Neon Orange
+                                                               sixthColor: "#9400D3", // Neon Purple
+                                                               seventhColor: "#00BFFF", // Neon Blue
+                                                               eighthColor: "#FF1493", // Neon Hot Pink
+                                                               ninthColor: "#7FFF00", // Neon Chartreuse
+                                                               tenthColor: "#DC143C", // Neon Crimson
                                                              },
   ...props
 }) => {
@@ -118,29 +116,37 @@ const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
     <div
       ref={containerRef}
       style={
-        {
-          "--border-size": `${borderSize}px`,
-          "--border-radius": `${borderRadius}px`,
-          "--neon-first-color": neonColors.firstColor,
-          "--neon-second-color": neonColors.secondColor,
-          "--card-width": `${dimensions.width}px`,
-          "--card-height": `${dimensions.height}px`,
-          "--card-content-radius": `${borderRadius - borderSize}px`,
-          "--pseudo-element-background-image": `linear-gradient(0deg, ${neonColors.firstColor}, ${neonColors.secondColor})`,
-          "--pseudo-element-width": `${dimensions.width + borderSize * 2}px`,
-          "--pseudo-element-height": `${dimensions.height + borderSize * 2}px`,
-          "--after-blur": `${dimensions.width / 3}px`,
-        } as CSSProperties
-      }
+      {
+        "--border-size": `${borderSize}px`,
+        "--border-radius": `${borderRadius}px`,
+        "--neon-first-color": neonColors.firstColor,
+        "--neon-second-color": neonColors.secondColor,
+        "--neon-third-color": neonColors.thirdColor,
+        "--neon-fourth-color": neonColors.fourthColor,
+        "--neon-fifth-color": neonColors.fifthColor,
+        "--neon-sixth-color": neonColors.sixthColor,
+        "--neon-seventh-color": neonColors.seventhColor,
+        "--neon-eighth-color": neonColors.eighthColor,
+        "--neon-ninth-color": neonColors.ninthColor,
+        "--neon-tenth-color": neonColors.tenthColor,
+        "--card-width": `${dimensions.width}px`,
+        "--card-height": `${dimensions.height}px`,
+        "--card-content-radius": `${borderRadius - borderSize}px`,
+        "--pseudo-element-background-image": `linear-gradient(45deg, ${neonColors.firstColor}, ${neonColors.secondColor}, ${neonColors.thirdColor}, ${neonColors.fourthColor})`,
+        "--pseudo-element-width": `${dimensions.width + borderSize * 2}px`,
+        "--pseudo-element-height": `${dimensions.height + borderSize * 2}px`,
+        "--after-blur": `${dimensions.width / 3}px`,
+      }as React.CSSProperties
+    }
       className={cn(
-        "relative z-10 size-full rounded-[var(--border-radius)]",
+        "relative z-10 rounded-[var(--border-radius)]",
         className,
       )}
       {...props}
     >
       <div
         className={cn(
-          "relative  rounded-[var(--card-content-radius)] bg-gray-100",
+          "relative size-full min-h-[inherit] rounded-[var(--card-content-radius)] bg-gray-100 p-0",
           "before:absolute before:-left-[var(--border-size)] before:-top-[var(--border-size)] before:-z-10 before:block",
           "before:h-[var(--pseudo-element-height)] before:w-[var(--pseudo-element-width)] before:rounded-[var(--border-radius)] before:content-['']",
           "before:bg-[linear-gradient(0deg,var(--neon-first-color),var(--neon-second-color))] before:bg-[length:100%_200%]",

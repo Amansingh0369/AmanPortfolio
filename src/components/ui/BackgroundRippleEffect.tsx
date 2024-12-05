@@ -37,9 +37,9 @@ export const BackgroundCellCore = () => {
         <div
             ref={ref}
             onMouseMove={handleMouseMove}
-            className="h-full absolute inset-0"
+            className="h-fit absolute inset-0"
         >
-            <div className="absolute h-screen w-screen inset-y-0  overflow-hidden">
+            <div className="absolute h-fit w-full inset-y-0  overflow-hidden">
                 <div className="absolute h-full w-full pointer-events-none -bottom-2 z-40 bg-slate-950 [mask-image:linear-gradient(to_bottom,transparent,black)]"></div>
                 <div
                     className="absolute inset-0 z-20 bg-transparent"
