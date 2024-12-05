@@ -1,0 +1,72 @@
+import { cn } from "@/lib/utils";
+import React from "react";
+
+interface BorderBeamProps {
+  className?: string;
+  size?: number;
+  duration?: number;
+  borderWidth?: number;
+  anchor?: number;
+  colorFrom?: string;
+  colorTo?: string;
+  delay?: number;
+}
+
+export const BorderBeam = ({
+                             className = "",
+                             size = 200,
+                             duration = 15,
+                             anchor = 90,
+                             borderWidth = 1.5,
+                             colorFrom = "#ffaa40",
+                             colorTo = "#9c40ff",
+                             delay = 0,
+                           }: BorderBeamProps) => {
+  return (
+      <div
+          style={
+            {
+              "--size": size,
+              "--duration": duration,
+              "--anchor": anchor,
+              "--border-width": borderWidth,
+              "--color-from": colorFrom,
+              "--color-to": colorTo,
+              "--delay": `-${delay}s`,
+            } as React.CSSProperties
+          }
+          className={cn(
+              "pointer-events-none absolute inset-0 rounded-[inherit] [border:calc(var(--border-width)*1px)_solid_transparent]",
+
+              // mask styles
+              "![mask-clip:padding-box,border-box] ![mask-composite:intersect] [mask:linear-gradient(transparent,transparent),linear-gradient(white,white)]",
+
+              // pseudo styles
+              "after:absolute after:aspect-square after:w-[calc(var(--size)*1px)] after:animate-border-beam after:[animation-delay:var(--delay)] after:[background:linear-gradient(to_left,var(--color-from),var(--color-to),transparent)] after:[offset-anchor:calc(var(--anchor)*1%)_50%] after:[offset-path:rect(0_auto_auto_0_round_calc(var(--size)*1px))]",
+              className,
+          )}
+      />
+  );
+};
+
+export const BorderBeamContainer = ({ count = 10 }: { count?: number }) => {
+  const randomize = (min: number, max: number) =>
+      Math.random() * (max - min) + min;
+
+  return (
+      <div className="relative w-full h-full">
+        {Array.from({ length: count }).map((_, index) => (
+            <BorderBeam
+                key={index}
+                size={randomize(100, 300)} // Random size
+                duration={randomize(10, 20)} // Random duration
+                borderWidth={randomize(1, 3)} // Random border width
+                anchor={randomize(50, 100)} // Random anchor position
+                colorFrom={`hsl(${randomize(0, 360)}, 100%, 70%)`} // Random color from
+                colorTo={`hsl(${randomize(0, 360)}, 100%, 50%)`} // Random color to
+                delay={randomize(0, 5)} // Random delay
+            />
+        ))}
+      </div>
+  );
+};
