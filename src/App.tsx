@@ -13,6 +13,8 @@ import {HeroScrollDemo} from "@/components/ui/HeroScrollDemo.tsx";
 import {GoogleGeminiEffectDemo} from "@/components/ui/Skills.tsx";
 import {HeroParallaxDemo} from "@/components/ui/HeroParallaxDemo.tsx";
 import {AnimatedBeamDemo} from "@/components/ui/AnimatedBeamDemo.tsx";
+import {VortexDemo} from "@/components/ui/VortexDemo.tsx";
+import {TracingBeamDemo} from "@/components/ui/TracingBeamDemo.tsx";
 
 
 
