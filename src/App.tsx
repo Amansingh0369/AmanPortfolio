@@ -26,7 +26,7 @@ function App() {
     <>
         <Meteors number={3}  />
         <BackgroundCellCore  />
-        <div className="bg-blue text-white w-full h-full relative">
+        <div className="bg-blue text-white w-full h-full relative ">
             <div className="relative z-50 cursor-auto min-w-full select-none bg-clip-text overflow-hidden">
 
                 {/*header*/}
@@ -90,7 +90,7 @@ function App() {
                 </div>
 
             {/*    2nd description*/}
-                <div className=" mx-20 mt-28 px-3 p-2 flex justify-between  ">
+                <div className=" mx-20 mt-28 px-3 p-2 flex justify-between   ">
 
                     <div className="w-1/2 h-40 flex ">
                         <div className="w-40 relative rounded-2xl  " >
@@ -122,8 +122,15 @@ function App() {
                 </div>
 
                 {/*skills*/}
-                <div className="">
+                <div className=" mx-20 mt-28 px-3 p-2  items-center flex justify-center ">
+                        <div>
+                            <h1 className="text-5xl bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text relative text-transparent px-3 ">
+                                Code : Skills
+                            </h1>
+                            <div className="w-full h-96">
 
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
