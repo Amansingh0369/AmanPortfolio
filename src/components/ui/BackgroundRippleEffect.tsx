@@ -7,9 +7,9 @@ import { cn } from "@/lib/utils.ts";
 
 export const BackgroundCellAnimation = () => {
     return (
-        <div className="relative h-screen bg-slate-950 flex justify-center overflow-hidden">
+        <div className="relative max-h-full bg-slate-950 flex justify-center overflow-hidden">
             <BackgroundCellCore />
-            <div className="relative z-50 mt-40 pointer-events-none select-none">
+            <div className="relative z-50 mt-40  select-none">
                 <h1 className="md:text-2xl lg:text-7xl font-medium text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-400 pointer-events-none">
                     Background cell animation <br />
                     with framer motion
@@ -37,10 +37,10 @@ export const BackgroundCellCore = () => {
         <div
             ref={ref}
             onMouseMove={handleMouseMove}
-            className="h-fit absolute inset-0"
+            className="h-full absolute inset-0"
         >
             <div className="absolute h-fit w-full inset-y-0  overflow-hidden">
-                <div className="absolute h-full w-full pointer-events-none -bottom-2 z-40 bg-slate-950 [mask-image:linear-gradient(to_bottom,transparent,black)]"></div>
+                <div className="absolute h-fit w-full pointer-events-none -bottom-2 z-40 bg-slate-950 [mask-image:linear-gradient(to_bottom,transparent,black)]"></div>
                 <div
                     className="absolute inset-0 z-20 bg-transparent"
                     style={{
@@ -78,7 +78,7 @@ const Pattern = ({
     cellClassName?: string;
 }) => {
     const x = new Array(47).fill(0);
-    const y = new Array(30).fill(0);
+    const y = new Array(50).fill(0);
     const matrix = x.map((_, i) => y.map((_, j) => [i, j]));
     const [clickedCell, setClickedCell] = useState<any>(null);
 
@@ -87,7 +87,7 @@ const Pattern = ({
             {matrix.map((row, rowIdx) => (
                 <div
                     key={`matrix-row-${rowIdx}`}
-                    className="flex flex-col  relative z-20 border-b"
+                    className="flex flex-col  relative  border-b"
                 >
                     {row.map((column, colIdx) => {
                         const controls = useAnimation();

@@ -10,6 +10,13 @@ import {BorderBeam} from "@/components/ui/border-beam.tsx";
 import Meteors from "@/components/ui/meteors.tsx";
 import {NeonGradientCard} from "@/components/ui/neon-gradient-card.tsx";
 import {CoverDemo} from "@/components/ui/CoverDemo.tsx";
+import SkillSection from "@/components/Skills.tsx";
+import {AnimatedBeamMultipleOutputDemo} from "@/components/ui/AnimatedBeamDemo.tsx";
+import {HeroScrollDemo} from "@/components/ui/HeroScrollDemo.tsx";
+import Spline from '@splinetool/react-spline';
+import {TracingBeamDemo} from "@/components/ui/TracingBeamDemo.tsx";
+import {TimelineDemo} from "@/components/ui/TimelineProjectDemo.tsx";
+import {WavyBackgroundDemo} from "@/components/ui/WavyBackgroundDemo.tsx";
 
 
 function App() {
@@ -18,13 +25,12 @@ function App() {
   return (
     <>
         <Meteors number={3}  />
-        <BackgroundCellCore  />
-        <div className="bg-black text-white w-full h-full  ">
-            <div className="relative border z-50 cursor-auto min-w-full select-none bg-clip-text overflow-hidden">
-
+        <div className="bg-black text-black w-full h-fit  ">
+            <BackgroundCellCore/>
+            <div className="relative  z-50 cursor-auto min-w-full  bg-clip-text">
                 {/*hero section */}
-                <div className="border m-1 p-1">
-                    <div className="mx-20 mt-16 p-2 border justify-between  flex flex-row items-center z-50 relative">
+                <div className=" m-1 p-1 h-screen">
+                    <div className="mx-20 mt-16 p-2  justify-between  flex flex-row items-center z-50 relative">
                         <div className="p-2">
 
                             {/*title*/}
@@ -79,13 +85,21 @@ function App() {
 
                         {/*profile image*/}
                         <div className=" relative rounded-2xl">
-                            <BorderBeam anchor={80} size={200} duration={6} delay={1} colorFrom={"white"} colorTo={"#3498db"} className="rounded-2xl" />
-                            <Profileimage/>
+                            <div className="relative h-[22rem] w-[43.5rem] select-none">
+                                <Spline scene="https://prod.spline.design/VQ0Z7qzgzNw2jQrD/scene.splinecode" />
+                                <div
+                                    className="absolute bottom-4 right-4 w-36 h-10 flex items-center justify-center bg-black text-white z-10"
+                                    style={{ zIndex: 10 }}
+                                >
+                                    Hello !!
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
                     {/*    2nd description*/}
-                    <div className=" mx-20 mt-28 px-3 p-2 flex justify-between  border  ">
+                    <div className=" mx-20 mt-28 px-3 p-2 flex justify-between    ">
 
                         <div className="w-1/2 h-40 flex ">
                             <div className="w-40 relative rounded-2xl  " >
@@ -120,18 +134,39 @@ function App() {
 
                 </div>
 
+                <div className="w-full h-30">
+                    <WavyBackgroundDemo/>
+                </div>
+
+                {/*project section*/}
+                <div className=" text-white bg-black">
+                    <TimelineDemo/>
+                </div>
+
                 {/*skills*/}
-                <div className=" mx-20 border mt-28 px-3 p-2  items-center flex justify-center ">
-                        <div>
-                            <div className="text-5xl items-center text-center bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text relative text-transparent px-3 ">
-                                {/*skills title*/}
-                                <div className="w-full h-96">
-                                    <CoverDemo/>
-                                </div>
+                <div className=" m-1   p-1 relative ">
+                    <div className="mx-20 p-2  mt-28 items-center flex flex-col justify-center">
+                        <div className="text-5xl items-center text-center bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text relative text-transparent  ">
+                            {/*skills title*/}
+                            <div className="w-full h-full ">
+                                <CoverDemo/>
+                            </div>
+                        </div>
+                        <div className=" w-full flex">
+
+                            <div className=" w-1/2">
+                                <SkillSection />
+                            </div>
+                            <div className=" w-1/2">
+                                <AnimatedBeamMultipleOutputDemo/>
                             </div>
 
                         </div>
+
+                    </div>
                 </div>
+
+
             </div>
         </div>
     </>
