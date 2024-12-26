@@ -1,72 +1,172 @@
 import React from 'react';
-
-interface SkillCategory {
-    category: string;
-    skills: string[];
-}
-
-const skillsData: SkillCategory[] = [
-    {
-        category: "Programming Languages",
-        skills: ["Java", "JavaScript*", "HTML*", "CSS*", "C/C++"],
-    },
-    {
-        category: "Web Development",
-        skills: ["ReactJS*", "Tailwind CSS*", "Node.js", "Express.js", "RESTful APIs*"],
-    },
-    {
-        category: "Database Management",
-        skills: ["MongoDB", "Mongoose", "PostgreSQL", "Prisma ORM", "MySQL"],
-    },
-    {
-        category: "Cloud Services",
-        skills: ["AWS EC2*", "S3", "CloudFront", "Vercel", "Render"],
-    },
-    {
-        category: "Version Control",
-        skills: ["Git*", "GitHub*"],
-    },
-];
+import {
+    SiJavascript,
+    SiTypescript,
+    SiTailwindcss,
+    SiCplusplus,
+    SiHtml5,
+    SiReact,
+    SiNodedotjs,
+    SiExpress,
+    SiMongodb,
+    SiPostgresql,
+    SiDocker,
+    SiGit,
+    SiMysql,
+    SiAmazonec2,
+    SiGithub,
+    SiPrisma,
+    SiShadcnui,
+    SiNginx,
+    SiVercel,
+    SiRender,
+} from 'react-icons/si';
+import {FaCloud, FaJava, FaPlus} from 'react-icons/fa';
+import {IoSettingsOutline} from "react-icons/io5";
 
 const Skills: React.FC = () => {
     return (
-        <div className="mt-8 p-4 rounded text-white"> {/* Main container with white text */}
-            <h2 className="text-2xl font-bold mb-6">Skills</h2>
-            <ul className="list-none p-0">
-                {skillsData.map((categoryData, index) => (
-                    <li key={index} className="mb-4">
-                        <div className="flex flex-row items-center">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5 mr-2 text-gray-400" // Keep icon gray for contrast
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            <h3 className="text-xl font-semibold">{categoryData.category}</h3>
-                        </div>
-                        <div className="flex flex-wrap mt-2">
-                            {categoryData.skills.map((skill, skillIndex) => (
-                                <span
-                                    key={skillIndex}
-                                    className="mr-2 mb-2 text-sm rounded-md px-2 py-1" // Added border for visibility
-                                >
-                  {skill.endsWith("*") ? (
-                      <>
-                          {skill.slice(0, -1)}{" "}
-                          <span className="text-xs text-gray-400"></span> {/* Adjusted proficient text color */}
-                      </>
-                  ) : (
-                      skill
-                  )}
-                </span>
-                            ))}
-                        </div>
-                    </li>
-                ))}
-            </ul>
+        <div className="text-white py-16 w-full flex flex-wrap gap-y-10 justify-center">
+
+            {/* Programming Category */}
+            <div>
+                {/*<h3 className="text-sm/[1.875rem] uppercase font-mono tracking-4 m-4 text-center bg-black">Programming</h3>*/}
+                <div className="flex flex-wrap gap-x-20 gap-y-6 justify-center">
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiJavascript className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">JavaScript</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <FaJava className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">Java</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiTypescript className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">TypeScript</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiCplusplus className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">C/C++</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiHtml5 className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">HTML</span>
+                    </div>
+                </div>
+            </div>
+
+            {/* Web Development Category */}
+            <div>
+                {/*<h3 className="text-sm/[1.875rem] uppercase font-mono tracking-4 m-4 text-center bg-black">Web Development</h3>*/}
+                <div className="flex flex-wrap gap-20 justify-center">
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiReact className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">ReactJS</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiNodedotjs className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">Node.js</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiExpress className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">Express.js</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <IoSettingsOutline  className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">REST APIs</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiTailwindcss className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">Tailwind CSS</span>
+                    </div>
+
+                </div>
+            </div>
+
+            {/* Databases / ORM Category */}
+            <div>
+                {/*<h3 className="text-sm/[1.875rem] uppercase font-mono tracking-4 m-4 text-center bg-black">Databases - ORM</h3>*/}
+                <div className="flex flex-wrap gap-12 justify-center">
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiShadcnui className="text-4xl text-neutral-400"/>
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">ShadCN</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiMongodb className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">MongoDB</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiPostgresql className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">PostgreSQL</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiPrisma className="text-4xl text-neutral-400"/>
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">Prisma ORM</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiMysql className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            {/* DevOps / Cloud Category */}
+            <div>
+                {/*<h3 className="text-sm/[1.875rem] uppercase font-mono tracking-4 m-4 text-center bg-black">DevOps - Cloud</h3>*/}
+                <div className="flex flex-wrap gap-24 justify-center">
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiAmazonec2 className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">AWS EC2</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <FaCloud className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500"> AWS S3</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110  transition-transform duration-300">
+                        <img
+                            src="src/assets/images/CloudFront.svg"
+                            className="grayscale w-10 h-10 rounded-full"
+                            alt="cloudfront logo"
+                        />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">CloudFront</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiNginx className="text-4xl text-neutral-400"/>
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">Nginx</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiDocker className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            {/* Version Control Category */}
+            <div>
+                {/*<h3 className="text-sm/[1.875rem] uppercase font-mono tracking-4 m-4 text-center bg-black">Version Control</h3>*/}
+                <div className="flex flex-wrap gap-20 justify-center">
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiVercel className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">Vercel</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiRender className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">Render</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiGit className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">Git</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiGithub className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">GitHub</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        {/*<FaPlus className="text-4xl text-neutral-400" />*/}
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">& More</span>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

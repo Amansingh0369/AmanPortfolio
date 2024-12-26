@@ -11,7 +11,20 @@ export default {
   theme: {
   	extend: {
 		spacing: {
-			'8.5': '2.125rem', // 8.5 * 0.25rem (default spacing scale)
+			'8.5': '2.125rem',
+		},
+		boxShadow: {
+			'vignette': 'inset 0 -60px 40px 0 rgba(0, 0, 0, 1)',
+			'vignette-y': 'inset 0 60px 40px 0 rgba(0, 0, 0, 1)',
+		},
+		backgroundImage: {
+			'gradient-to-b': 'linear-gradient(to bottom, var(--tw-gradient-stops))',
+		},
+		backgroundClip: {
+			text: 'text',
+		},
+		variants: {
+			backgroundClip: ['responsive'],
 		},
   		borderRadius: {
   			lg: 'var(--radius)',

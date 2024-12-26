@@ -18,27 +18,27 @@ export function TimelineDemo() {
                     <div className="grid grid-cols-2 gap-4 ">
                         <div>
                             <ShineBorder
-                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.5] hover:z-40 transform transition-transform duration-300"
+                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
                                     src="src/assets/images/TApp.png"
                                     alt="startup template"
                                     width={500}
-                                    height={500}
+                                    height={600}
                                     className="rounded-lg object-fill h-20 md:h-44 lg:h-60 w-full transform transition-transform duration-300 "
                                 />
                             </ShineBorder>
                         </div>
                         <div>
                             <ShineBorder
-                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.5] hover:z-40 transform transition-transform duration-300"
+                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
                                     src="src/assets/images/TApp-main.png"
                                     alt="startup template"
-                                    width={500}
+                                    width={600}
                                     height={500}
                                     className="rounded-lg object-fill h-20 md:h-44 lg:h-60 w-full transform transition-transform duration-300 "
                                 />
@@ -46,7 +46,7 @@ export function TimelineDemo() {
                         </div>
                         <div>
                             <ShineBorder
-                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.5] hover:z-40 transform transition-transform duration-300"
+                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
@@ -54,13 +54,13 @@ export function TimelineDemo() {
                                     alt="startup template"
                                     width={500}
                                     height={500}
-                                    className="rounded-lg object-fill h-20 md:h-44 lg:h-60 w-full transform transition-transform duration-300 "
+                                    className="rounded-lg object-cover h-18 md:h-44 lg:h-60 w-full transform transition-transform duration-300 "
                                 />
                             </ShineBorder>
                         </div>
                         <div>
                             <ShineBorder
-                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.5] hover:z-40 transform transition-transform duration-300"
+                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
@@ -72,8 +72,6 @@ export function TimelineDemo() {
                                 />
                             </ShineBorder>
                         </div>
-
-
                     </div>
                 </div>
             ),
@@ -93,7 +91,7 @@ export function TimelineDemo() {
                     <div className="grid grid-cols-2 gap-4 ">
                         <div>
                             <ShineBorder
-                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.5] hover:z-40 transform transition-transform duration-300"
+                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
@@ -107,7 +105,7 @@ export function TimelineDemo() {
                         </div>
                         <div>
                             <ShineBorder
-                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.5] hover:z-40 transform transition-transform duration-300"
+                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
@@ -121,7 +119,7 @@ export function TimelineDemo() {
                         </div>
                         <div>
                             <ShineBorder
-                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.5] hover:z-40 transform transition-transform duration-300"
+                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
@@ -135,7 +133,7 @@ export function TimelineDemo() {
                         </div>
                         <div>
                             <ShineBorder
-                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.5] hover:z-40 transform transition-transform duration-300"
+                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
@@ -147,8 +145,6 @@ export function TimelineDemo() {
                                 />
                             </ShineBorder>
                         </div>
-
-
                     </div>
                 </div>
             ),
@@ -168,7 +164,7 @@ export function TimelineDemo() {
                     <div className="grid grid-cols-2 gap-4 ">
                         <div>
                             <ShineBorder
-                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.5] hover:z-40 transform transition-transform duration-300"
+                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
@@ -182,7 +178,7 @@ export function TimelineDemo() {
                         </div>
                         <div>
                             <ShineBorder
-                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.5] hover:z-40 transform transition-transform duration-300"
+                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
@@ -196,7 +192,7 @@ export function TimelineDemo() {
                         </div>
                         <div>
                             <ShineBorder
-                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.5] hover:z-40 transform transition-transform duration-300"
+                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
@@ -210,7 +206,7 @@ export function TimelineDemo() {
                         </div>
                         <div>
                             <ShineBorder
-                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.5] hover:z-40 transform transition-transform duration-300"
+                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
@@ -222,8 +218,6 @@ export function TimelineDemo() {
                                 />
                             </ShineBorder>
                         </div>
-
-
                     </div>
                 </div>
             ),
