@@ -10,9 +10,9 @@ export const WavyBackground = ({
   colors,
   waveWidth,
   backgroundFill,
-  blur = 10,
+  blur =50,
   speed = "fast",
-  waveOpacity = 0.5,
+  waveOpacity = 100,
   ...props
 }: {
   children?: any;
@@ -38,11 +38,11 @@ export const WavyBackground = ({
   const getSpeed = () => {
     switch (speed) {
       case "slow":
-        return 0.001;
+        return .0001;
       case "fast":
-        return 0.002;
+        return .004;
       default:
-        return 0.001;
+        return 0.011;
     }
   };
 
@@ -62,17 +62,18 @@ export const WavyBackground = ({
   };
 
   const waveColors = colors ?? [
-    "#A07CFE",
-    "#FE8FB5",
-    "#FFBE7B",
-    "#e879f9",
-    "#22d3ee",
+    "#00FFFF", // Neon Cyan Blue
+    "#1E90FF", // Neon Deep Sky Blue
+    "#7DF9FF", // Electric Blue
+    "#ffffff", // Royal Blue
+    "#8A2BE2", // Space-like Neon Purple
   ];
+
   const drawWave = (n: number) => {
     nt += getSpeed();
     for (i = 0; i < n; i++) {
       ctx.beginPath();
-      ctx.lineWidth = waveWidth || 50;
+      ctx.lineWidth = waveWidth || 40;
       ctx.strokeStyle = waveColors[i % waveColors.length];
       for (x = 0; x < w; x += 5) {
         var y = noise(x / 800, 0.3 * i, nt) * 100;
@@ -117,7 +118,7 @@ export const WavyBackground = ({
       )}
     >
       <canvas
-        className=" inset-0 h-80  w-full"
+        className=" inset-0 h-96  w-full"
         ref={canvasRef}
         id="canvas"
         style={{

@@ -51,9 +51,13 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </div>
 
               <div className="flex flex-col ">
-                <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-200 dark:text-neutral-500">
+                <h3
+                    className="hidden md:block text-xl tracking-wide md:pl-20 md:text-4xl font-bold text-neutral-200 dark:text-neutral-500"
+                    style={{ wordSpacing: "3em" }}
+                >
                   {item.title}
                 </h3>
+
                 <div className=" mt-10  flex flex-row">
                   <div className="border-t border-blue-500-500 m h-1 w-10 mt-5 ml-8.5 p-1 ">
 

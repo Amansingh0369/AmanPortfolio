@@ -25,7 +25,7 @@ export function TimelineDemo() {
                                     src="src/assets/images/TApp.png"
                                     alt="startup template"
                                     width={500}
-                                    height={600}
+                                    height={500}
                                     className="rounded-lg object-fill h-20 md:h-44 lg:h-60 w-full transform transition-transform duration-300 "
                                 />
                             </ShineBorder>
@@ -38,7 +38,7 @@ export function TimelineDemo() {
                                 <img
                                     src="src/assets/images/TApp-main.png"
                                     alt="startup template"
-                                    width={600}
+                                    width={500}
                                     height={500}
                                     className="rounded-lg object-fill h-20 md:h-44 lg:h-60 w-full transform transition-transform duration-300 "
                                 />
