@@ -1,6 +1,5 @@
 import './App.css'
 import './index.css';
-import React from "react";
 import Meteors from "@/components/ui/meteors.tsx";
 import {CoverDemo} from "@/components/ui/CoverDemo.tsx";
 import SkillSection from "@/components/Skills.tsx";
@@ -12,7 +11,6 @@ import Footer from "@/components/Footer.tsx";
 
 
 function App() {
-    const time = new Date();
 
     return (
         <>
