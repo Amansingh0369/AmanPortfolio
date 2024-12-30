@@ -1,13 +1,17 @@
+// src/components/HeroSection.tsx
+
+// 1. Import Statements
 import { NeonGradientCard } from "@/components/ui/neon-gradient-card.tsx";
 import { BorderBeam } from "@/components/ui/border-beam.tsx";
 import StatusToggle from "@/components/StatusToggle.tsx";
 import TimeDisplay from "@/components/ui/TimeDisplay.tsx";
-import React from "react";
 import Particles from "@/components/ui/particles.tsx";
 import { LinkPreview } from "@/components/ui/link-preview.tsx";
 import SplineWithLoading from "@/components/SplineWithLoading.tsx";
+import { IoLogoGithub, IoLogoTwitter, IoMail, IoLogoLinkedin, IoDocument } from 'react-icons/io5';
 
 
+// 3. HeroSection Component
 export function HeroSection() {
     return (
         <>
@@ -42,7 +46,7 @@ export function HeroSection() {
                                     className="text-lg font-medium text-blue-600 hover:underline"
                                 >
                                     <div className="text-4xl sm:text-5xl  text-gray-500 hover:text-white hover:scale-125 transition duration-300 ">
-                                        <ion-icon name="logo-github"></ion-icon>
+                                        <IoLogoGithub name="logo-github"></IoLogoGithub>
                                     </div>
                                 </a>
                             </LinkPreview>
@@ -53,7 +57,7 @@ export function HeroSection() {
                                     className="text-lg font-medium text-blue-600 hover:underline"
                                 >
                                     <div className="text-4xl sm:text-5xl text-gray-500 hover:text-blue-600 hover:scale-125 transition duration-300 ">
-                                        <ion-icon name="logo-twitter"></ion-icon>
+                                        <IoLogoTwitter name="logo-twitter"></IoLogoTwitter>
                                     </div>
                                 </a>
                             </LinkPreview>
@@ -64,7 +68,7 @@ export function HeroSection() {
                                     className="text-lg font-medium text-blue-600 hover:underline"
                                 >
                                     <div className="text-4xl sm:text-5xl text-gray-500 hover:text-white hover:scale-125 transition duration-300">
-                                        <ion-icon name="mail"></ion-icon>
+                                        <IoMail name="mail"></IoMail>
                                     </div>
                                 </a>
                             </LinkPreview>
@@ -75,7 +79,7 @@ export function HeroSection() {
                                     className="text-4xl sm:text-5xl font-medium text-blue-600 hover:underline"
                                 >
                                     <div className="text-5xl text-gray-500 hover:text-blue-500 hover:scale-125 transition duration-300">
-                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                        <IoLogoLinkedin name="logo-linkedin"></IoLogoLinkedin>
                                     </div>
                                 </a>
                             </LinkPreview>
@@ -86,7 +90,7 @@ export function HeroSection() {
                                     className="text-lg font-medium text-blue-600 hover:underline"
                                 >
                                     <div className="text-4xl sm:text-5xl text-gray-500 hover:text-white hover:scale-125 transition duration-300 ">
-                                        <ion-icon name="document"></ion-icon>
+                                        <IoDocument name="document"></IoDocument>
                                     </div>
                                 </a>
                             </LinkPreview>

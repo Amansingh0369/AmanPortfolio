@@ -1,6 +1,13 @@
-import  { useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { motion, useMotionValue, useTransform, useSpring, AnimatePresence } from 'framer-motion';
 import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter, FaFileAlt } from 'react-icons/fa';
+
+type IconProps = {
+    mouseX: any; // Can be more specific if `useMotionValue` has a defined type
+    title: string;
+    icon: React.ReactNode;
+    href: string;
+};
 
 const Footer = () => {
     const icons = [
@@ -15,7 +22,7 @@ const Footer = () => {
 
     return (
         <footer className="pt-10 z-100 px-6 sm:p-8 bg-black text-white border-t border-gray-600">
-            <div className="container mx-auto flex flex-col md:flex-row justify-around  items-center">
+            <div className="container mx-auto flex flex-col md:flex-row justify-around items-center">
                 <div className="absolute sm:left-[66rem] sm:bottom-8 ">
                     <motion.div
                         onMouseMove={(e) => mouseX.set(e.pageX)}
@@ -29,20 +36,19 @@ const Footer = () => {
                 </div>
             </div>
             <div className="mt-8 sm:ml-20 sm:mt-2 text-center sm:text-start md:mb-0">
-                  <span className="italic justify-center sm:justify-start  relative text-neutral-400 text-lg text-center">
-                    "Code is like humor. When you have to explain it, it’s bad."
-                  </span>
+        <span className="italic justify-center sm:justify-start relative text-neutral-400 text-lg text-center">
+          "Code is like humor. When you have to explain it, it’s bad."
+        </span>
             </div>
-
         </footer>
     );
 };
 
-const IconWithTooltip = ({ mouseX, title, icon, href }) => {
-    const ref = useRef(null);
+const IconWithTooltip: React.FC<IconProps> = ({ mouseX, title, icon, href }) => {
+    const ref = useRef<HTMLDivElement>(null);
     const [hovered, setHovered] = useState(false);
 
-    const distance = useTransform(mouseX, (val) => {
+    const distance = useTransform(mouseX, (val:number) => {
         const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
         return val - bounds.x - bounds.width / 2;
     });
@@ -83,6 +89,3 @@ const IconWithTooltip = ({ mouseX, title, icon, href }) => {
 };
 
 export default Footer;
-
-
-
