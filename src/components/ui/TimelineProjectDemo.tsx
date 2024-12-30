@@ -90,7 +90,7 @@ export function TimelineDemo() {
                             <li>Focuses on personalized user experiences through features like dark/light mode toggles and mobile-friendly designs.</li>
                         </ul>
                     </p>
-                    <div className="flex flex-row md:grid grid-row-1 md:grid-cols-2 sm:gap-6 gap-10overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory">
+                    <div className="flex flex-row md:grid grid-row-1 md:grid-cols-2 sm:gap-6 gap-10 overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory">
                         <div className="flex-shrink-1 snap-center  sm:w-full h-44 md:h-auto">
                             <ShineBorder
                                 className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
