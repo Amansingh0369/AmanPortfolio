@@ -1,7 +1,6 @@
 "use client";
 
 import React, {
-  CSSProperties,
   ReactElement,
   ReactNode,
   useEffect,
@@ -12,8 +11,9 @@ import React, {
 import { cn } from "@/lib/utils";
 
 interface NeonColorsProps {
-  firstColor: string;
-  secondColor: string;
+  sixthColor: string;
+  seventhColor: string;
+  ninthColor: string;
 }
 
 interface NeonGradientCardProps {
@@ -73,16 +73,9 @@ const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
   borderSize = 2,
   borderRadius = 20,
                                                              neonColors = {
-                                                               firstColor: "#ff00aa", // Neon Pink
-                                                               secondColor: "#00FFF1", // Neon Cyan
-                                                               thirdColor: "#FFD700", // Neon Gold
-                                                               fourthColor: "#32CD32", // Neon Lime Green
-                                                               fifthColor: "#FF4500", // Neon Orange
                                                                sixthColor: "#9400D3", // Neon Purple
                                                                seventhColor: "#00BFFF", // Neon Blue
-                                                               eighthColor: "#FF1493", // Neon Hot Pink
                                                                ninthColor: "#ffffff", // Neon Chartreuse
-                                                               tenthColor: "#DC143C", // Neon Crimson
                                                              },
   ...props
 }) => {
@@ -119,20 +112,13 @@ const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
       {
         "--border-size": `${borderSize}px`,
         "--border-radius": `${borderRadius}px`,
-        "--neon-first-color": neonColors.firstColor,
-        "--neon-second-color": neonColors.secondColor,
-        "--neon-third-color": neonColors.thirdColor,
-        "--neon-fourth-color": neonColors.fourthColor,
-        "--neon-fifth-color": neonColors.fifthColor,
         "--neon-sixth-color": neonColors.sixthColor,
         "--neon-seventh-color": neonColors.seventhColor,
-        "--neon-eighth-color": neonColors.eighthColor,
         "--neon-ninth-color": neonColors.ninthColor,
-        "--neon-tenth-color": neonColors.tenthColor,
         "--card-width": `${dimensions.width}px`,
         "--card-height": `${dimensions.height}px`,
         "--card-content-radius": `${borderRadius - borderSize}px`,
-        "--pseudo-element-background-image": `linear-gradient(45deg, ${neonColors.firstColor}, ${neonColors.secondColor}, ${neonColors.thirdColor}, ${neonColors.fourthColor}, ${neonColors.fifthColor}, ${neonColors.sixthColor}, ${neonColors.seventhColor}, ${neonColors.eighthColor}, ${neonColors.ninthColor}, ${neonColors.tenthColor})`,
+        "--pseudo-element-background-image": `linear-gradient(45deg, , ${neonColors.sixthColor}, ${neonColors.seventhColor},${neonColors.ninthColor})`,
         "--pseudo-element-width": `${dimensions.width + borderSize * 2}px`,
         "--pseudo-element-height": `${dimensions.height + borderSize * 2}px`,
         "--after-blur": `${dimensions.width / 3}px`,

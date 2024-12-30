@@ -107,7 +107,7 @@ export function HeroSection() {
                     <div className="w-full sm:w-1/2 h-40 flex ">
                         <div className="sm:w-40 w-64 relative h-40 ml-4 flex flex-wrap rounded-2xl">
                             <NeonGradientCard className="w-full items-center justify-center text-center rounded-2xl relative">
-                                <img src="src/assets/images/despic.jpeg" className="rounded-2xl pointer-events-none w-full h-40 " />
+                                <img src="src/assets/images/despic.jpeg" className="rounded-2xl pointer-events-none w-full h-40 "  alt={"img"}/>
                                 <BorderBeam anchor={60} size={70} duration={6} delay={9} colorFrom={"white"} colorTo={"#3498db"} className="rounded-2xl hidden sm:block" />
                             </NeonGradientCard>
                         </div>
