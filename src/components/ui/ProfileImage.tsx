@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { PinContainer } from "../ui/3d-pin";
 
 export function Profileimage() {

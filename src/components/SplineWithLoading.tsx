@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import Spline from "@splinetool/react-spline";
 import statusToggle from "@/components/StatusToggle.tsx";
 

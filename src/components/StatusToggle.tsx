@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 export  const StatusToggle = () => {
     const [status, setStatus] = useState<string>('online');  // Initial state set to 'Offline'

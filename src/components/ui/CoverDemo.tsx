@@ -1,4 +1,3 @@
-import React from "react";
 import { Cover } from "@/components/ui/cover";
 import LampDemo from "@/components/ui/lamp.tsx";
 

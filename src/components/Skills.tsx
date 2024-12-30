@@ -21,7 +21,7 @@ import {
     SiVercel,
     SiRender,
 } from 'react-icons/si';
-import {FaCloud, FaJava, FaPlus} from 'react-icons/fa';
+import {FaCloud, FaJava} from 'react-icons/fa';
 import {IoSettingsOutline} from "react-icons/io5";
 
 const Skills: React.FC = () => {
