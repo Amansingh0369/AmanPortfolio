@@ -8,7 +8,6 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import {IconLayoutNavbarCollapse} from "@tabler/icons-react";
-import ShineBorder from "@/components/ui/shine-border.tsx";
 export const FloatingNav = ({
                               items,
                               desktopClassName,
@@ -144,7 +143,7 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-      <a href={href} target="_blank" rel="noopener noreferrer">
+      <a href={href} >
         <motion.div
             ref={ref}
             style={{ width, height }}
@@ -216,7 +215,7 @@ const FloatingDockMobile = ({
                     >
                       <a
                           href={item.href}
-                          target="_blank" rel="noopener noreferrer"
+
                           key={item.title}
                           className="h-10 w-10 rounded-full bg-neutral-900 flex items-center justify-center"
                       >

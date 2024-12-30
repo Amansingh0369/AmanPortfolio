@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { Cover } from "@/components/ui/cover.tsx";
 
 export default function LampDemo() {
     return (

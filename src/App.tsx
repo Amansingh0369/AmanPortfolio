@@ -1,6 +1,6 @@
 import './App.css'
 import './index.css';
-import React, {useEffect} from "react";
+import React from "react";
 import Meteors from "@/components/ui/meteors.tsx";
 import {CoverDemo} from "@/components/ui/CoverDemo.tsx";
 import SkillSection from "@/components/Skills.tsx";
@@ -9,7 +9,6 @@ import {WavyBackgroundDemo} from "@/components/ui/WavyBackgroundDemo.tsx";
 import {HeroSection} from "@/components/HeroSection.tsx";
 import {FloatingNavDemo} from "@/components/ui/FloatingNavDemo.tsx";
 import Footer from "@/components/Footer.tsx";
-import MouseCircle from "@/components/MouseCircle.tsx";
 
 
 function App() {
