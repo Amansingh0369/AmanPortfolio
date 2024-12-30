@@ -30,7 +30,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="src/assets/images/TApp.png"
+                                    src="src/assets/TApp.png"
                                     alt="Transaction App Overview"
                                     className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
                                 />
@@ -42,7 +42,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="src/assets/images/TApp-main.png"
+                                    src="src/assets/TApp-main.png"
                                     alt="Transaction App Main"
                                     className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
                                 />
@@ -54,7 +54,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="src/assets/images/TApp-login.png"
+                                    src="src/assets/TApp-login.png"
                                     alt="Transaction App Login"
                                     className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
                                 />
@@ -66,7 +66,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="src/assets/images/Tapp-send.png"
+                                    src="src/assets/Tapp-send.png"
                                     alt="Transaction App Send"
                                     className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
                                 />
@@ -97,7 +97,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="src/assets/images/NApp.png"
+                                    src="src/assets/NApp.png"
                                     alt="startup template"
                                     width={500}
                                     height={500}
@@ -111,7 +111,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="src/assets/images/NoteApp-main-page.png"
+                                    src="src/assets/NoteApp-main-page.png"
                                     alt="startup template"
                                     width={500}
                                     height={500}
@@ -125,7 +125,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="src/assets/images/Napp-mainpage-dark.png"
+                                    src="src/assets/Napp-mainpage-dark.png"
                                     alt="startup template"
                                     width={500}
                                     height={500}
@@ -139,7 +139,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="src/assets/images/Napp-login.png"
+                                    src="src/assets/Napp-login.png"
                                     alt="startup template"
                                     width={500}
                                     height={500}
@@ -171,7 +171,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="src/assets/images/TApp.png"
+                                    src="src/assets/TApp.png"
                                     alt="startup template"
                                     width={500}
                                     height={100}
@@ -185,7 +185,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="src/assets/images/TApp-main.png"
+                                    src="src/assets/TApp-main.png"
                                     alt="startup template"
                                     width={500}
                                     height={500}
@@ -199,7 +199,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="src/assets/images/TApp-login.png"
+                                    src="src/assets/TApp-login.png"
                                     alt="startup template"
                                     width={500}
                                     height={500}
@@ -213,7 +213,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="src/assets/images/Tapp-send.png"
+                                    src="src/assets/Tapp-send.png"
                                     alt="startup template"
                                     width={500}
                                     height={500}
