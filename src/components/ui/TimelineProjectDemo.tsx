@@ -30,7 +30,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="public/assets/TApp.png"
+                                    src="/assets/TApp.png"
                                     alt="Transaction App Overview"
                                     className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
                                 />
@@ -42,7 +42,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="public/assets/TApp-main.png"
+                                    src="/assets/Tapp-main.png"
                                     alt="Transaction App Main"
                                     className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
                                 />
@@ -54,7 +54,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="public/assets/TApp-login.png"
+                                    src="/assets/TApp-login.png"
                                     alt="Transaction App Login"
                                     className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
                                 />
@@ -66,7 +66,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="public/assets/Tapp-send.png"
+                                    src="/assets/Tapp-send.png"
                                     alt="Transaction App Send"
                                     className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
                                 />
@@ -90,14 +90,14 @@ export function TimelineDemo() {
                             <li>Focuses on personalized user experiences through features like dark/light mode toggles and mobile-friendly designs.</li>
                         </ul>
                     </p>
-                    <div className="flex flex-row md:grid grid-row-1 md:grid-cols-2 gap-10 overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory">
+                    <div className="flex flex-row md:grid grid-row-1 md:grid-cols-2 sm:gap-6 gap-10overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory">
                         <div className="flex-shrink-1 snap-center  sm:w-full h-44 md:h-auto">
                             <ShineBorder
                                 className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="public/assets/NApp.png"
+                                    src="/assets/NApp.png"
                                     alt="startup template"
                                     width={500}
                                     height={500}
@@ -111,7 +111,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="public/assets/NoteApp-main-page.png"
+                                    src="/assets/NoteApp-main-page.png"
                                     alt="startup template"
                                     width={500}
                                     height={500}
@@ -125,7 +125,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="public/assets/Napp-mainpage-dark.png"
+                                    src="/assets/Napp-mainpage-dark.png"
                                     alt="startup template"
                                     width={500}
                                     height={500}
@@ -139,7 +139,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="public/assets/Napp-login.png"
+                                    src="/assets/Napp-login.png"
                                     alt="startup template"
                                     width={500}
                                     height={500}
@@ -164,14 +164,14 @@ export function TimelineDemo() {
                             <li>Emphasizes my backend management skills and ability to implement role-based authorization for secure app functionality.</li>
                         </ul>
                     </p>
-                    <div className="flex flex-row md:grid grid-row-1 md:grid-cols-2 gap-10 overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory">
+                    <div className="flex flex-row md:grid grid-row-1 md:grid-cols-2 sm:gap-6 gap-10 overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory">
                         <div className="flex-shrink-1 snap-center  sm:w-full h-44 md:h-auto">
                             <ShineBorder
                                 className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="public/assets/TApp.png"
+                                    src="/assets/TApp.png"
                                     alt="startup template"
                                     width={500}
                                     height={100}
@@ -185,7 +185,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="public/assets/TApp-main.png"
+                                    src="/assets/Tapp-main.png"
                                     alt="startup template"
                                     width={500}
                                     height={500}
@@ -199,7 +199,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="public/assets/TApp-login.png"
+                                    src="/assets/TApp-login.png"
                                     alt="startup template"
                                     width={500}
                                     height={500}
@@ -213,7 +213,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="public/assets/Tapp-send.png"
+                                    src="/assets/Tapp-send.png"
                                     alt="startup template"
                                     width={500}
                                     height={500}

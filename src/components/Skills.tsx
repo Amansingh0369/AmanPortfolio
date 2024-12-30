@@ -124,7 +124,7 @@ const Skills: React.FC = () => {
                     </div>
                     <div className="flex items-center z-10 space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110  transition-transform duration-300">
                         <img
-                            src="public/assets/CloudFront.svg"
+                            src="/assets/CloudFront.svg"
                             className="grayscale w-10 h-10 rounded-full"
                             alt="cloudfront logo"
                         />
