@@ -6,6 +6,7 @@ export function TimelineDemo() {
         {
             title: "Transaction App",
             link: "https://transaction-app.amansingh0369.me",
+            gitHubLink:"https://github.com/Amansingh0369/Transaction-App-Frontend.git",
             content: (
                 <div>
                     <p className="text-neutral-400 dark:text-neutral-200 text-md md:text-lg font-normal mb-8">
@@ -22,7 +23,7 @@ export function TimelineDemo() {
                             </li>
                         </ul>
                     </p>
-                    <div className="flex flex-row md:grid grid-row-1 md:grid-cols-2 gap-10 overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory">
+                    <div className="flex flex-row md:grid grid-row-1 md:grid-cols-2 sm:gap-6 gap-10 overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory">
                         <div className="flex-shrink-1 snap-center  sm:w-full h-44 md:h-auto">
                             <ShineBorder
                                 className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
@@ -80,6 +81,7 @@ export function TimelineDemo() {
         {
             title: "NOTE~iT "+"App",
             link: "https://note-app.amansingh0369.me",
+            gitHubLink:"https://github.com/Amansingh0369/Note-App-Frontend.git",
             content: (
                 <div>
                     <p className="text-neutral-400 dark:text-neutral-200 text-md md:text-lg font-normal mb-8">
@@ -152,6 +154,7 @@ export function TimelineDemo() {
         {
             title: "Course Selling App",
             link: "https://github.com/Amansingh0369/courseSellingApp",
+            gitHubLink:"https://github.com/Amansingh0369/courseSellingApp.git",
             content: (
                 <div>
                     <p className="text-neutral-400 dark:text-neutral-200 text-md md:text-lg font-normal mb-8">

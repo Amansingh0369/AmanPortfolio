@@ -1,17 +1,17 @@
 "use client";
 import {
-  useMotionValueEvent,
   useScroll,
   useTransform,
   motion,
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import {InteractiveHoverButtonDemo} from "@/components/ui/InteractiveHoverButtonDemo.tsx";
+import InteractiveHoverButton from "@/components/ui/interactive-hover-button.tsx";
 
 interface TimelineEntry {
   title: string;
   content: React.ReactNode;
-  link:String;
+  link:string;
+  gitHubLink:string,
 }
 
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
@@ -56,14 +56,26 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </h3>
               <div className=" mt-10 sm:flex hidden sm:block w-full  flex-row ">
                 <div className="border-t border-blue-500-500 m h-1 w-10 mt-5 ml-8.5 p-1 ">
+                  </div>
+                  <div
+                      className="md:pl-0 flex flex-row"
+                      onClick={() => {
+                        window.location.href = item.link; // Dynamically use item.link
+                      }}
+                  >
+                    <InteractiveHoverButton text={"Live Demo"} className="relative justify-center" />
+                  </div>
+              </div>
+              <div className=" mt-10 sm:flex hidden sm:block w-full  flex-row ">
+                <div className="border-t border-blue-500-500 m h-1 w-10 mt-5 ml-8.5 p-1 ">
                 </div>
                 <div
                     className="md:pl-0 flex flex-row"
                     onClick={() => {
-                      window.location.href = item.link; // Dynamically use item.link
+                      window.location.href = item.gitHubLink; // Dynamically use item.link
                     }}
                 >
-                  <InteractiveHoverButtonDemo />
+                  <InteractiveHoverButton text={"GitHub"} className="relative justify-start text-start px-6" />
                 </div>
               </div>
             </div>
@@ -73,6 +85,25 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 {item.title}
               </h3>
               {item.content}{""}
+              <div className="block sm:hidden flex flex-row mt-6">
+                <div
+                    className="md:pl-0 flex flex-row"
+                    onClick={() => {
+                      window.location.href = item.link; // Dynamically use item.link
+                    }}
+                >
+                  <InteractiveHoverButton text={"Live Demo"} className="relative justify-center" />
+                </div>
+                <div
+                    className="md:pl-0 flex flex-row"
+                    onClick={() => {
+                      window.location.href = item.gitHubLink; // Dynamically use item.link
+                    }}
+                >
+                  <InteractiveHoverButton text={"GitHub"} className="relative justify-start text-start px-6" />
+                </div>
+
+              </div>
             </div>
           </div>
         ))}
