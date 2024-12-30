@@ -79,9 +79,9 @@ export function HeroSection() {
                                     </div>
                                 </a>
                             </LinkPreview>
-                            <LinkPreview url={"https://drive.google.com/file/d/1gARdlxA8VfCSunblhT1HGe3A7TbXobhS/view?pli=1"} className="z-100 relative">
+                            <LinkPreview url={"https://drive.google.com/file/d/1D26WgGSi3xGFPN0qmXqUZkbjSdd2vow6/view"} className="z-100 relative">
                                 <a
-                                    href="https://drive.google.com/file/d/1gARdlxA8VfCSunblhT1HGe3A7TbXobhS/view?pli=1"
+                                    href="https://drive.google.com/file/d/1D26WgGSi3xGFPN0qmXqUZkbjSdd2vow6/view"
                                     target="_blank" rel="noopener noreferrer"
                                     className="text-lg font-medium text-blue-600 hover:underline"
                                 >
@@ -104,7 +104,7 @@ export function HeroSection() {
                         <div className="sm:w-40 w-64 relative h-40 ml-4 flex flex-wrap rounded-2xl">
                             <NeonGradientCard className="w-full items-center justify-center text-center rounded-2xl relative">
                                 <img src="src/assets/images/despic.jpeg" className="rounded-2xl pointer-events-none w-full h-40 " />
-                                <BorderBeam anchor={60} size={70} duration={6} delay={9} colorFrom={"white"} colorTo={"#3498db"} className="rounded-2xl" />
+                                <BorderBeam anchor={60} size={70} duration={6} delay={9} colorFrom={"white"} colorTo={"#3498db"} className="rounded-2xl hidden sm:block" />
                             </NeonGradientCard>
                         </div>
                         <div className="w-1/2 sm:mx-10 mx-8   sm:block  p-2 space-y-2 flex overflow-hidden ">

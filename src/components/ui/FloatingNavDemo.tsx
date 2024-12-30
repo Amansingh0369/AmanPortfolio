@@ -56,13 +56,13 @@ export function FloatingNavDemo() {
             icon: (
                 <IconFileFilled className="h-full w-full text-neutral-300 dark:text-neutral-300" />
             ),
-            href: "https://drive.google.com/file/d/1gARdlxA8VfCSunblhT1HGe3A7TbXobhS/view?pli=1",
+            href: "https://drive.google.com/file/d/1D26WgGSi3xGFPN0qmXqUZkbjSdd2vow6/view",
         }
     ];
     return (
-        <div className="relative bg-black   w-full">
+        <div className="relative bg-black justify-start  w-1 hidden sm:block">
 
-            <FloatingNav  mobileClassName="translate-y-20" // only for demo, remove for production
+            <FloatingNav  mobileClassName="translate-y-[45rem]" // only for demo, remove for production
                           items={links}
             />
 

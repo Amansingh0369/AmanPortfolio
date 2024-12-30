@@ -43,6 +43,7 @@ export default {
 				rippling: 'rippling var(--duration) ease-out',
 				shine: 'shine var(--duration) infinite linear',
 				pinch: 'pinch 0.3s ease-out', // Add the pinch animation
+				'scroll-left': 'scroll-left 20s linear infinite',
 			},
 			keyframes: {
 				ripple: {
@@ -57,6 +58,10 @@ export default {
 					'100%': {
 						'offset-distance': '100%'
 					}
+				},
+				'scroll-left': {
+					'0%': { transform: 'translateX(0)' },
+					'100%': { transform: 'translateX(-100%)' },
 				},
 				meteor: {
 					'0%': {

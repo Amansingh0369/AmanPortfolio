@@ -31,7 +31,7 @@ const Skills: React.FC = () => {
             {/* Programming Category */}
             <div>
                 {/*<h3 className="text-sm/[1.875rem] uppercase font-mono tracking-4 m-4 text-center bg-black">Programming</h3>*/}
-                <div className="flex flex-wrap gap-x-20 gap-y-6 justify-center">
+                <div className="flex flex-wrap sm:gap-x-20 gap-y-6 justify-center">
                     <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
                         <SiJavascript className="text-4xl text-neutral-400" />
                         <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">JavaScript</span>
@@ -58,7 +58,7 @@ const Skills: React.FC = () => {
             {/* Web Development Category */}
             <div>
                 {/*<h3 className="text-sm/[1.875rem] uppercase font-mono tracking-4 m-4 text-center bg-black">Web Development</h3>*/}
-                <div className="flex flex-wrap gap-20 justify-center">
+                <div className="flex flex-wrap sm:gap-20 gap-y-6 justify-center">
                     <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
                         <SiReact className="text-4xl text-neutral-400" />
                         <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">ReactJS</span>
@@ -86,7 +86,7 @@ const Skills: React.FC = () => {
             {/* Databases / ORM Category */}
             <div>
                 {/*<h3 className="text-sm/[1.875rem] uppercase font-mono tracking-4 m-4 text-center bg-black">Databases - ORM</h3>*/}
-                <div className="flex flex-wrap gap-12 justify-center">
+                <div className="flex flex-wrap sm:gap-12 gap-y-6 justify-center">
                     <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
                         <SiShadcnui className="text-4xl text-neutral-400"/>
                         <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">ShadCN</span>
@@ -113,7 +113,7 @@ const Skills: React.FC = () => {
             {/* DevOps / Cloud Category */}
             <div>
                 {/*<h3 className="text-sm/[1.875rem] uppercase font-mono tracking-4 m-4 text-center bg-black">DevOps - Cloud</h3>*/}
-                <div className="flex flex-wrap gap-24 justify-center">
+                <div className="flex flex-wrap sm:gap-x-24   gap-y-6 justify-center">
                     <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
                         <SiAmazonec2 className="text-4xl text-neutral-400" />
                         <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">AWS EC2</span>
@@ -144,7 +144,7 @@ const Skills: React.FC = () => {
             {/* Version Control Category */}
             <div>
                 {/*<h3 className="text-sm/[1.875rem] uppercase font-mono tracking-4 m-4 text-center bg-black">Version Control</h3>*/}
-                <div className="flex flex-wrap gap-20 justify-center">
+                <div className="flex flex-wrap sm:gap-20 gap-y-6 justify-center">
                     <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
                         <SiVercel className="text-4xl text-neutral-400" />
                         <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">Vercel</span>

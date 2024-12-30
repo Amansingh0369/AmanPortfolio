@@ -36,7 +36,7 @@ function App() {
                                     <CoverDemo />
                                 </div>
                             </div>
-                            <div className="relative max-w-full flex mt-16 z-100">
+                            <div className="relative max-w-full flex sm:mt-16 mt-4 z-100">
                                 <div className="">
                                     <SkillSection />
                                 </div>

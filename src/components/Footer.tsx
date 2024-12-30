@@ -8,20 +8,15 @@ const Footer = () => {
         { title: "Let's Connect", icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/aman-singh-01663b231/' },
         { title: 'Check out my GitHub', icon: <FaGithub />, href: 'https://github.com/Amansingh0369' },
         { title: 'Twitter', icon: <FaTwitter />, href: 'https://x.com/singh0369aman/' },
-        { title: 'Check out Resume', icon: <FaFileAlt />, href: 'https://drive.google.com/file/d/1gARdlxA8VfCSunblhT1HGe3A7TbXobhS/view?pli=1' },
+        { title: 'Check out Resume', icon: <FaFileAlt />, href: 'https://drive.google.com/file/d/1D26WgGSi3xGFPN0qmXqUZkbjSdd2vow6/view' },
     ];
 
     let mouseX = useMotionValue(Infinity);
 
     return (
-        <footer className="p-10 bg-black text-white border-t border-gray-600">
-            <div className="mb-4 md:mb-0">
-                  <span className="italic absolute text-gray-400 text-lg">
-                    "Code is like humor. When you have to explain it, it’s bad."
-                  </span>
-            </div>
+        <footer className="pt-10 z-100 px-6 sm:p-8 bg-black text-white border-t border-gray-600">
             <div className="container mx-auto flex flex-col md:flex-row justify-around  items-center">
-                <div className="relative left-[28rem]">
+                <div className="absolute sm:left-[66rem] sm:bottom-8 ">
                     <motion.div
                         onMouseMove={(e) => mouseX.set(e.pageX)}
                         onMouseLeave={() => mouseX.set(Infinity)}
@@ -33,6 +28,12 @@ const Footer = () => {
                     </motion.div>
                 </div>
             </div>
+            <div className="mt-8 sm:ml-20 sm:mt-2 text-center sm:text-start md:mb-0">
+                  <span className="italic justify-center sm:justify-start  relative text-neutral-400 text-lg text-center">
+                    "Code is like humor. When you have to explain it, it’s bad."
+                  </span>
+            </div>
+
         </footer>
     );
 };
