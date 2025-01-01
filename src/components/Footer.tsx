@@ -35,7 +35,7 @@ const Footer = () => {
                     </motion.div>
                 </div>
             </div>
-            <div className="mt-8 sm:ml-20 sm:mt-2 text-center sm:text-start md:mb-0">
+            <div className="mt-8 sm:ml-20 sm:mt-2 text-center sm:flex justify-start md:mb-0">
         <span className="italic justify-center sm:justify-start relative text-neutral-400 text-lg text-center">
           "Code is like humor. When you have to explain it, it’s bad."
         </span>
