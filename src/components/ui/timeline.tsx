@@ -6,6 +6,7 @@ import {
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import InteractiveHoverButton from "@/components/ui/interactive-hover-button.tsx";
+import {ArrowRight} from "lucide-react";
 
 interface TimelineEntry {
   title: string;
@@ -87,7 +88,15 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 {item.title}
               </h3>
               {item.content}{""}
-              <div className="block sm:hidden flex flex-row mt-6">
+              <div className="justify-end flex sm:hidden">
+                <p className="mt-2 px-4 flex items-center text-neutral-300">
+                  Scroll left
+                  <ArrowRight className="ml-2 text-xs p-1" />
+                </p>
+              </div>
+
+              <div className="block sm:hidden justify-center flex flex-row mt-6">
+                {item.title !== "Course Selling App" && (
                 <div
                     className="md:pl-0 flex flex-row"
                     onClick={() => {
@@ -96,6 +105,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 >
                   <InteractiveHoverButton text={"Live Demo"} className="relative justify-center" />
                 </div>
+                )}
                 <div
                     className="md:pl-0 flex flex-row"
                     onClick={() => {

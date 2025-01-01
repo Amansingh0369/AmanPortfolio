@@ -23,6 +23,7 @@ export function TimelineDemo() {
                             </li>
                         </ul>
                     </p>
+
                     <div className="flex flex-row md:grid grid-row-1 md:grid-cols-2 sm:gap-6 gap-10 overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory">
                         <div className="flex-shrink-1 snap-center  sm:w-full h-44 md:h-auto">
                             <ShineBorder
@@ -36,7 +37,7 @@ export function TimelineDemo() {
                                 />
                             </ShineBorder>
                         </div>
-                        <div className="flex-shrink-0 snap-center w-full h-44 md:h-auto">
+                        <div className="flex-shrink-1 snap-center w-full h-44 md:h-auto">
                             <ShineBorder
                                 className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
@@ -48,7 +49,7 @@ export function TimelineDemo() {
                                 />
                             </ShineBorder>
                         </div>
-                        <div className="flex-shrink-0 snap-center w-full h-44 md:h-auto">
+                        <div className="flex-shrink-1 snap-center w-full h-44 md:h-auto">
                             <ShineBorder
                                 className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
@@ -60,7 +61,7 @@ export function TimelineDemo() {
                                 />
                             </ShineBorder>
                         </div>
-                        <div className="flex-shrink-0 snap-center w-full h-44 md:h-auto">
+                        <div className="flex-shrink-1 snap-center w-full h-44 md:h-auto">
                             <ShineBorder
                                 className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
@@ -99,8 +100,6 @@ export function TimelineDemo() {
                                 <img
                                     src="/assets/NApp.png"
                                     alt="startup template"
-                                    width={500}
-                                    height={500}
                                     className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
                                 />
                             </ShineBorder>
@@ -113,8 +112,6 @@ export function TimelineDemo() {
                                 <img
                                     src="/assets/NoteApp-main-page.png"
                                     alt="startup template"
-                                    width={500}
-                                    height={500}
                                     className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
                                 />
                             </ShineBorder>
@@ -127,8 +124,7 @@ export function TimelineDemo() {
                                 <img
                                     src="/assets/Napp-mainpage-dark.png"
                                     alt="startup template"
-                                    width={500}
-                                    height={500}
+
                                     className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
                                 />
                             </ShineBorder>
@@ -141,8 +137,6 @@ export function TimelineDemo() {
                                 <img
                                     src="/assets/Napp-login.png"
                                     alt="startup template"
-                                    width={500}
-                                    height={500}
                                     className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
                                 />
                             </ShineBorder>
@@ -173,8 +167,7 @@ export function TimelineDemo() {
                                 <img
                                     src="/assets/courseUser.png"
                                     alt="startup template"
-                                    width={500}
-                                    height={500}
+
                                     className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
                                 />
                             </ShineBorder>
@@ -187,8 +180,7 @@ export function TimelineDemo() {
                                 <img
                                     src="/assets/CourseUsermain.png"
                                     alt="startup template"
-                                    width={500}
-                                    height={500}
+
                                     className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
                                 />
                             </ShineBorder>
@@ -201,8 +193,7 @@ export function TimelineDemo() {
                                 <img
                                     src="/assets/courseAdmin.png"
                                     alt="startup template"
-                                    width={500}
-                                    height={100}
+
                                     className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
                                 />
                             </ShineBorder>
@@ -215,8 +206,7 @@ export function TimelineDemo() {
                                 <img
                                     src="/assets/courseadminmain.png"
                                     alt="startup template"
-                                    width={500}
-                                    height={500}
+
                                     className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
                                 />
                             </ShineBorder>
