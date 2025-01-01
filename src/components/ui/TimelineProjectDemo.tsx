@@ -171,7 +171,35 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="/assets/TApp.png"
+                                    src="/assets/courseUser.png"
+                                    alt="startup template"
+                                    width={500}
+                                    height={500}
+                                    className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
+                                />
+                            </ShineBorder>
+                        </div>
+                        <div className="flex-shrink-1 snap-center  sm:w-full h-44 md:h-auto">
+                            <ShineBorder
+                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
+                                color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+                            >
+                                <img
+                                    src="/assets/CourseUsermain.png"
+                                    alt="startup template"
+                                    width={500}
+                                    height={500}
+                                    className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
+                                />
+                            </ShineBorder>
+                        </div>
+                        <div className="flex-shrink-1 snap-center  sm:w-full h-44 md:h-auto">
+                            <ShineBorder
+                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
+                                color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+                            >
+                                <img
+                                    src="/assets/courseAdmin.png"
                                     alt="startup template"
                                     width={500}
                                     height={100}
@@ -185,7 +213,7 @@ export function TimelineDemo() {
                                 color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             >
                                 <img
-                                    src="/assets/Tapp-main.png"
+                                    src="/assets/courseadminmain.png"
                                     alt="startup template"
                                     width={500}
                                     height={500}
@@ -193,34 +221,7 @@ export function TimelineDemo() {
                                 />
                             </ShineBorder>
                         </div>
-                        <div className="flex-shrink-1 snap-center  sm:w-full h-44 md:h-auto">
-                            <ShineBorder
-                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
-                                color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
-                            >
-                                <img
-                                    src="/assets/TApp-login.png"
-                                    alt="startup template"
-                                    width={500}
-                                    height={500}
-                                    className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
-                                />
-                            </ShineBorder>
-                        </div>
-                        <div className="flex-shrink-1 snap-center  sm:w-full h-44 md:h-auto">
-                            <ShineBorder
-                                className="relative p-1 flex rounded-xl h-full w-full flex-col items-center justify-center bg-black md:shadow-xl hover:scale-[1.1] hover:z-40 transform transition-transform duration-300"
-                                color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
-                            >
-                                <img
-                                    src="/assets/Tapp-send.png"
-                                    alt="startup template"
-                                    width={500}
-                                    height={500}
-                                    className="rounded-lg object-cover w-full h-full md:h-44 lg:h-60 transform transition-transform duration-300"
-                                />
-                            </ShineBorder>
-                        </div>
+
                     </div>
                 </div>
             ),

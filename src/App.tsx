@@ -8,9 +8,14 @@ import {WavyBackgroundDemo} from "@/components/ui/WavyBackgroundDemo.tsx";
 import {HeroSection} from "@/components/HeroSection.tsx";
 import {FloatingNavDemo} from "@/components/ui/FloatingNavDemo.tsx";
 import Footer from "@/components/Footer.tsx";
+import {useEffect} from "react";
 
 
 function App() {
+    useEffect(() => {
+        console.log("Hello there! ( ͡° ͜ʖ ͡°)")
+        console.log("I see you are looking around for something. Code is not open-sourced yet, but you can always reach out to me at singh0369aman@gmail.com");
+    }, []);
 
     return (
         <>

@@ -54,18 +54,20 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 {item.title}
 
               </h3>
-              <div className=" mt-10 sm:flex hidden sm:block w-full  flex-row ">
-                <div className="border-t border-blue-500-500 m h-1 w-10 mt-5 ml-8.5 p-1 ">
+              {item.title !== "Course Selling App" && (
+                  <div className="mt-10 sm:flex hidden sm:block w-full flex-row">
+                    <div className="border-t  h-1 w-10 mt-5 ml-8.5 p-1"></div>
+                    <div
+                        className="md:pl-0 flex flex-row"
+                        onClick={() => {
+                          window.location.href = item.link; // Dynamically use item.link
+                        }}
+                    >
+                      <InteractiveHoverButton text={"Live Demo"} className="relative justify-center" />
+                    </div>
                   </div>
-                  <div
-                      className="md:pl-0 flex flex-row"
-                      onClick={() => {
-                        window.location.href = item.link; // Dynamically use item.link
-                      }}
-                  >
-                    <InteractiveHoverButton text={"Live Demo"} className="relative justify-center" />
-                  </div>
-              </div>
+              )}
+
               <div className=" mt-10 sm:flex hidden sm:block w-full  flex-row ">
                 <div className="border-t border-blue-500-500 m h-1 w-10 mt-5 ml-8.5 p-1 ">
                 </div>
