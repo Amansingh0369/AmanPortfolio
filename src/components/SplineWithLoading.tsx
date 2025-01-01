@@ -6,14 +6,19 @@ const SplineWithLoading = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     const handleLoad = () => {
-        setIsLoading(false); // Hide loading when the Spline scene has loaded
+        // Add a small delay before hiding the loading state
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 100);
     };
 
     return (
         <div className="relative rounded-2xl  ">
             <div className="relative h-[22rem] w-[38.5rem] mt-10  select-none z-100">
                 {/* Loading Indicator */}
-                {isLoading && (
+                <div className={`absolute w-full transition-opacity duration-300 ${
+                    isLoading ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                }`}>
                     <div className="flex flex-col ml-6 items-center justify-center h-fit w-full bg-black rounded-2xl">
                         {/* Head */}
                         <div className="bg-gray-700 w-48 h-28  mt-0  rounded-2xl animate-pulse mb-1"></div>
@@ -31,12 +36,12 @@ const SplineWithLoading = () => {
                         {/* Loading Message */}
 
                     </div>
-                )}
+                </div>
 
                 {/* Spline Scene */}
                 <Spline
                     scene="https://prod.spline.design/mDTVNpf6EzDIavDQ/scene.splinecode"
-                    onLoad={handleLoad} // Set loading state to false once loaded
+                    onLoad={handleLoad}
                 />
 
                 {/* Optional Overlay Content */}
