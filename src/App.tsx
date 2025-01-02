@@ -10,7 +10,6 @@ import {FloatingNavDemo} from "@/components/ui/FloatingNavDemo.tsx";
 import Footer from "@/components/Footer.tsx";
 import {useEffect} from "react";
 
-
 function App() {
     useEffect(() => {
         console.log("Hello there! ( ͡° ͜ʖ ͡°)")
