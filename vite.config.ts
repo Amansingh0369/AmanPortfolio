@@ -10,4 +10,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  optimizeDeps: {
+    exclude: ['chunk-PTOHLNWW.js'], // Exclude the problematic file or package
+  },
 });

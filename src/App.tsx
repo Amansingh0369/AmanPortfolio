@@ -10,6 +10,7 @@ import {FloatingNavDemo} from "@/components/ui/FloatingNavDemo.tsx";
 import Footer from "@/components/Footer.tsx";
 import {useEffect} from "react";
 import MouseCircle from "@/components/MouseCircle.tsx";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
     useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
             <div className="bg-black h-full w-full select-none">
                 <Meteors number={3} />
                 <MouseCircle />
+                <Analytics/>
             </div>
             <div className="bg-black text-black w-full h-fit">
                 {/* <BackgroundCellCore /> */}
