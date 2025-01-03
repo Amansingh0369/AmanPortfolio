@@ -25,7 +25,7 @@ const MouseCircle = () => {
 
     return (
         <motion.div
-            className="fixed pointer-events-none w-[50px] h-[50px] bg-transparent border border-white/50 rounded-full shadow-[0_0_25px_#d4a5ff] backdrop-blur-md mix-blend-difference"
+            className="fixed pointer-events-none w-[50px] h-[50px] bg-transparent border border-white/50 rounded-full shadow-[0_0_25px_#d4a5ff] backdrop-blur-md mix-blend-difference hidden sm:block"
             style={{
                 x: useTransform(smoothX, (value) => value - 15),
                 y: useTransform(smoothY, (value) => value - 15),
