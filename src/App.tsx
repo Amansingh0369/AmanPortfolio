@@ -9,6 +9,7 @@ import {HeroSection} from "@/components/HeroSection.tsx";
 import {FloatingNavDemo} from "@/components/ui/FloatingNavDemo.tsx";
 import Footer from "@/components/Footer.tsx";
 import {useEffect} from "react";
+import MouseCircle from "@/components/MouseCircle.tsx";
 
 function App() {
     useEffect(() => {
@@ -20,7 +21,7 @@ function App() {
         <>
             <div className="bg-black h-full w-full select-none">
                 <Meteors number={3} />
-                {/* <MouseCircle /> */}
+                <MouseCircle />
             </div>
             <div className="bg-black text-black w-full h-fit">
                 {/* <BackgroundCellCore /> */}

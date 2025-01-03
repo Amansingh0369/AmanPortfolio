@@ -1,9 +1,14 @@
-import React, { useEffect } from 'react';
-import { motion, useMotionValue, useTransform } from 'framer-motion';
+import { useEffect } from 'react';
+import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 
-const MouseCircle: React.FC = () => {
+const MouseCircle = () => {
     const x = useMotionValue(0);
     const y = useMotionValue(0);
+    
+    // Add spring physics for smoother movement
+    const springConfig = { damping: 20, stiffness: 150, mass: 0.3 };
+    const smoothX = useSpring(x, springConfig);
+    const smoothY = useSpring(y, springConfig);
 
     useEffect(() => {
         const updatePosition = (event: MouseEvent) => {
@@ -20,16 +25,23 @@ const MouseCircle: React.FC = () => {
 
     return (
         <motion.div
-            className="fixed pointer-events-none w-[40px] h-[40px] bg-transparent border-2 border-white rounded-full"
+            className="fixed pointer-events-none w-[50px] h-[50px] bg-transparent border border-white/50 rounded-full shadow-[0_0_25px_#d4a5ff] backdrop-blur-md mix-blend-difference"
             style={{
-                x: useTransform(x, (value) => value - 15), // Adjust for circle radius
-                y: useTransform(y, (value) => value - 15), // Adjust for circle radius
-                zIndex: 1000, // Ensure it's on top
+                x: useTransform(smoothX, (value) => value - 15),
+                y: useTransform(smoothY, (value) => value - 15),
+                zIndex: 1000,
+                background: 'linear-gradient(45deg, #d4a5ff 0%, #e8ccff 100%)',
+                boxShadow: '0 0 30px #d4a5ff, inset 0 0 20px rgba(255,255,255,0.7)',
+                mixBlendMode: 'difference'
+            }}
+            animate={{
+                scale: [1, 1.02, 1],
             }}
             transition={{
-                type: 'spring',
-                stiffness: 400, // Controls the speed of the spring
-                damping: 30,    // Controls the bounciness of the spring
+                type: "tween",
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut"
             }}
         />
     );
