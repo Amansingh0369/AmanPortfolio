@@ -11,6 +11,7 @@ import Footer from "@/components/Footer.tsx";
 import {useEffect} from "react";
 import MouseCircle from "@/components/MouseCircle.tsx";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
     useEffect(() => {
@@ -24,6 +25,7 @@ function App() {
                 <Meteors number={3} />
                 <MouseCircle />
                 <Analytics/>
+                <SpeedInsights/>
             </div>
             <div className="bg-black text-black w-full h-fit">
                 {/* <BackgroundCellCore /> */}
