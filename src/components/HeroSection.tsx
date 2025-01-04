@@ -38,62 +38,91 @@ export function HeroSection() {
                         </div>
 
                         {/* Icon Links */}
-                        <div className="flex items-center space-x-6  sm:m-0 mx-4 right-8 mt-2 py-2 relative">
-                            <LinkPreview url={"https://github.com/Amansingh0369"} className="z-100 relative">
-                                <a
-                                    href="https://github.com/Amansingh0369"
-                                    target="_blank" rel="noopener noreferrer"
-                                    className="text-lg font-medium text-blue-600 hover:underline"
-                                >
-                                    <div className="text-4xl sm:text-5xl  text-gray-500 hover:text-white hover:scale-125 transition duration-300 ">
-                                        <IoLogoGithub name="logo-github"></IoLogoGithub>
-                                    </div>
-                                </a>
-                            </LinkPreview>
-                            <LinkPreview url={"https://x.com/singh0369aman/"} className="z-100 relative">
-                                <a
-                                    href="https://x.com/singh0369aman"
-                                    target="_blank" rel="noopener noreferrer"
-                                    className="text-lg font-medium text-blue-600 hover:underline"
-                                >
-                                    <div className="text-4xl sm:text-5xl text-gray-500 hover:text-blue-600 hover:scale-125 transition duration-300 ">
-                                        <IoLogoTwitter name="logo-twitter"></IoLogoTwitter>
-                                    </div>
-                                </a>
-                            </LinkPreview>
-                            <LinkPreview url={"https://gmail.com"} className="z-100 relative">
-                                <a
-                                    href="mailto:singh0369aman@gmail.com"
-                                    target="_blank" rel="noopener noreferrer"
-                                    className="text-lg font-medium text-blue-600 hover:underline"
-                                >
-                                    <div className="text-4xl sm:text-5xl text-gray-500 hover:text-white hover:scale-125 transition duration-300">
-                                        <IoMail name="mail"></IoMail>
-                                    </div>
-                                </a>
-                            </LinkPreview>
-                            <LinkPreview url={"https://www.linkedin.com/in/aman-singh-01663b231/"} className="z-100 relative">
-                                <a
-                                    href="https://www.linkedin.com/in/aman-singh-01663b231/"
-                                    target="_blank" rel="noopener noreferrer"
-                                    className="text-4xl sm:text-5xl font-medium text-blue-600 hover:underline"
-                                >
-                                    <div className="text-5xl text-gray-500 hover:text-blue-500 hover:scale-125 transition duration-300">
-                                        <IoLogoLinkedin name="logo-linkedin"></IoLogoLinkedin>
-                                    </div>
-                                </a>
-                            </LinkPreview>
-                            <LinkPreview url={"https://drive.google.com/file/d/1D26WgGSi3xGFPN0qmXqUZkbjSdd2vow6/view"} className="z-100 relative">
-                                <a
-                                    href="https://drive.google.com/file/d/1D26WgGSi3xGFPN0qmXqUZkbjSdd2vow6/view"
-                                    target="_blank" rel="noopener noreferrer"
-                                    className="text-lg font-medium text-blue-600 hover:underline"
-                                >
-                                    <div className="text-4xl sm:text-5xl text-gray-500 hover:text-white hover:scale-125 transition duration-300 ">
-                                        <IoDocument name="document"></IoDocument>
-                                    </div>
-                                </a>
-                            </LinkPreview>
+                        <div className="flex items-center space-x-6  sm:m-0 sm:mx-4 sm:mt-2 py-2 relative">
+                            <div className="group relative pb-4">
+                                <LinkPreview url={"https://github.com/Amansingh0369"} className="z-100 relative">
+                                    <a
+                                        href="https://github.com/Amansingh0369"
+                                        target="_blank" rel="noopener noreferrer"
+                                        className="text-lg font-medium text-blue-600 hover:underline"
+                                    >
+                                        <div className="text-4xl sm:text-5xl  text-gray-500 hover:text-white hover:scale-125 transition duration-300 ">
+                                            <IoLogoGithub name="logo-github"></IoLogoGithub>
+                                        </div>
+                                    </a>
+                                </LinkPreview>
+                                <span className="absolute top-full mt-2 left-1/2 -translate-x-1/2 transform -translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-sm text-gray-400">
+                                    GitHub
+                                </span>
+                            </div>
+                            
+                            <div className="group relative pb-4">
+                                <LinkPreview url={"https://x.com/singh0369aman/"} className="z-100 relative">
+                                    <a
+                                        href="https://x.com/singh0369aman"
+                                        target="_blank" rel="noopener noreferrer"
+                                        className="text-lg font-medium text-blue-600 hover:underline"
+                                    >
+                                        <div className="text-4xl sm:text-5xl text-gray-500 hover:text-blue-600 hover:scale-125 transition duration-300 ">
+                                            <IoLogoTwitter name="logo-twitter"></IoLogoTwitter>
+                                        </div>
+                                    </a>
+                                </LinkPreview>
+                                <span className="absolute top-full mt-2 left-1/2 -translate-x-1/2 transform -translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-sm text-gray-400">
+                                    Twitter
+                                </span>
+                            </div>
+
+                            <div className="group relative pb-4">
+                                <LinkPreview url={"https://gmail.com"} className="z-100 relative">
+                                    <a
+                                        href="mailto:singh0369aman@gmail.com"
+                                        target="_blank" rel="noopener noreferrer"
+                                        className="text-lg font-medium text-blue-600 hover:underline"
+                                    >
+                                        <div className="text-4xl sm:text-5xl text-gray-500 hover:text-white hover:scale-125 transition duration-300">
+                                            <IoMail name="mail"></IoMail>
+                                        </div>
+                                    </a>
+                                </LinkPreview>
+                                <span className="absolute top-full mt-2 left-1/2 -translate-x-1/2 transform -translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-sm text-gray-400">
+                                    Email
+                                </span>
+                            </div>
+
+                            <div className="group relative pb-4">
+                                <LinkPreview url={"https://www.linkedin.com/in/aman-singh-01663b231/"} className="z-100 relative">
+                                    <a
+                                        href="https://www.linkedin.com/in/aman-singh-01663b231/"
+                                        target="_blank" rel="noopener noreferrer"
+                                        className="text-4xl sm:text-5xl font-medium text-blue-600 hover:underline"
+                                    >
+                                        <div className="text-5xl text-gray-500 hover:text-blue-500 hover:scale-125 transition duration-300">
+                                            <IoLogoLinkedin name="logo-linkedin"></IoLogoLinkedin>
+                                        </div>
+                                    </a>
+                                </LinkPreview>
+                                <span className="absolute top-full mt-2 left-1/2 -translate-x-1/2 transform -translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-sm text-gray-400">
+                                    LinkedIn
+                                </span>
+                            </div>
+
+                            <div className="group relative pb-4">
+                                <LinkPreview url={"https://drive.google.com/file/d/1D26WgGSi3xGFPN0qmXqUZkbjSdd2vow6/view"} className="z-100 relative">
+                                    <a
+                                        href="https://drive.google.com/file/d/1D26WgGSi3xGFPN0qmXqUZkbjSdd2vow6/view"
+                                        target="_blank" rel="noopener noreferrer"
+                                        className="text-lg font-medium text-blue-600 hover:underline"
+                                    >
+                                        <div className="text-4xl sm:text-5xl text-gray-500 hover:text-white hover:scale-125 transition duration-300 ">
+                                            <IoDocument name="document"></IoDocument>
+                                        </div>
+                                    </a>
+                                </LinkPreview>
+                                <span className="absolute top-full mt-2 left-1/2 -translate-x-1/2 transform -translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-sm text-gray-400">
+                                    Resume
+                                </span>
+                            </div>
                         </div>
                     </div>
 
