@@ -38,7 +38,7 @@ export function HeroSection() {
                         </div>
 
                         {/* Icon Links */}
-                        <div className="flex items-center space-x-6  sm:m-0 sm:mx-4 sm:mt-2 py-2 relative">
+                        <div className="flex items-center space-x-6  sm:m-0 sm:mx-4 sm:right-4 sm:mt-2 py-2 relative">
                             <div className="group relative pb-4">
                                 <LinkPreview url={"https://github.com/Amansingh0369"} className="z-100 relative">
                                     <a
