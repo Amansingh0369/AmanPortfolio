@@ -20,7 +20,7 @@ export const StatusToggle = () => {
         return <div>Loading...</div>;
     }
 
-    const {  discord_status, activities } = userData;
+    const {  discord_status } = userData;
     const status = discord_status;
     return (
         <div className="cursor-pointer relative bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-transparent">
