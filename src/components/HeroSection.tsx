@@ -9,10 +9,27 @@ import Particles from "@/components/ui/particles.tsx";
 import { LinkPreview } from "@/components/ui/link-preview.tsx";
 import SplineWithLoading from "@/components/SplineWithLoading.tsx";
 import { IoLogoGithub, IoLogoTwitter, IoMail, IoLogoLinkedin, IoDocument } from 'react-icons/io5';
+import {useEffect, useState} from "react";
 
 
 // 3. HeroSection Component
 export function HeroSection() {
+
+    const [userData, setUserData] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setIsLoading(true);
+        fetch('https://api.lanyard.rest/v1/users/835418426528104459')
+            .then((response) => response.json())
+            .then((data) => {
+                setUserData(data.data);
+                setIsLoading(false);
+            })
+            .catch((error) => console.error('Error fetching data:', error));
+    }, []);
+
+
     return (
         <>
             <div id="home" className="pb-2 h-fit sm:h-screen z-100  w-full select-none">
