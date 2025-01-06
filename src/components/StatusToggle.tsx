@@ -20,12 +20,8 @@ export const StatusToggle = () => {
         return <div>Loading...</div>;
     }
 
-    const { discord_user, discord_status, activities } = userData;
-    const username = discord_user.display_name || discord_user.global_name;
+    const {  discord_status, activities } = userData;
     const status = discord_status;
-    const customStatus = activities.length > 0 ? activities[0].state : 'No custom status';
-    const timestamp = activities.length > 0 ? new Date(activities[0].timestamps.end) : null;
-
     return (
         <div className="cursor-pointer relative bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-transparent">
             {status === 'online' ? 'Online' : status === 'idle' ? 'Idle' : 'Offline'}
