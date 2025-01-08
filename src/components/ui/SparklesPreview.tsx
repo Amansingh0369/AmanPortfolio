@@ -62,40 +62,40 @@ export function Codework() {
                     </div>
                     <div className="mt-6 md:mt-8 text-sm md:text-base lg:text-md text-[#8be8fd] flex flex-wrap gap-2 md:gap-3">
                         <div className="group relative">
-                            <div className="absolute opacity-0 group-hover:opacity-100 bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all duration-300 after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">Javascript</div>
+                            <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">Javascript</div>
                             <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7] rounded-full hover:bg-[#3d3d40] transition-colors text-sm">Javascript</div>
                         </div>
                         <div className="group relative">
-                            <div className="absolute opacity-0 group-hover:opacity-100 bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all duration-300 after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">React</div>
+                            <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">React</div>
                             <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7] rounded-full hover:bg-[#3d3d40] transition-colors text-sm">React</div>
                         </div>
                         <div className="group relative">
-                            <div className="absolute opacity-0 group-hover:opacity-100 bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all duration-300 text-center after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">RESTful api</div>
+                            <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all text-center after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">RESTful api</div>
                             <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7] text-center rounded-full hover:bg-[#3d3d40] transition-colors text-sm">RESTful API</div>
                         </div>
                         <div className="group relative">
-                            <div className="absolute opacity-0 group-hover:opacity-100 bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all duration-300 after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">Nodejs</div>
+                            <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">Nodejs</div>
                             <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7] rounded-full hover:bg-[#3d3d40] transition-colors text-sm">Nodejs</div>
                         </div>
                         <div className="group relative">
-                            <div className="absolute opacity-0 group-hover:opacity-100 bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all duration-300 after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">MySql</div>
-                            <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7] rounded-full hover:bg-[#3d3d40] transition-colors text-sm">MySql</div>
+                            <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">MySql</div>
+                            <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7]  rounded-full hover:bg-[#3d3d40] transition-colors text-sm">MySql</div>
                         </div>
                         <div className="group relative">
-                            <div className="absolute opacity-0 group-hover:opacity-100 bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all duration-300 after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">Websockets</div>
+                            <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">Websockets</div>
                             <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7] rounded-full hover:bg-[#3d3d40] transition-colors text-sm">Websockets</div>
                         </div>
                         <div className="group relative">
-                            <div className="absolute opacity-0 group-hover:opacity-100 bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all duration-300 after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">Linux</div>
-                            <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7] rounded-full hover:bg-[#3d3d40] transition-colors text-sm">Linux</div>
+                            <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">Linux</div>
+                            <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7]  rounded-full hover:bg-[#3d3d40] transition-colors text-sm">Linux</div>
                         </div>
                         <div className="group relative">
-                            <div className="absolute opacity-0 group-hover:opacity-100 bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all duration-300 after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent text-center after:border-t-[#4a3f69]">Discord API</div>
+                            <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent text-center after:border-t-[#4a3f69]">Discord API</div>
                             <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7] rounded-full hover:bg-[#3d3d40] transition-colors text-sm">Discord API</div>
                         </div>
                         <div className="group relative">
-                            <div className="absolute opacity-0 group-hover:opacity-100 bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all duration-300 after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">aapanel</div>
-                            <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] rounded-full text-[#cba6f7] hover:bg-[#3d3d40] transition-colors text-sm">aapanel</div>
+                            <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">aapanel</div>
+                            <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7] rounded-full hover:bg-[#3d3d40] transition-colors text-sm">aapanel</div>
                         </div>
                     </div>
                 </div>

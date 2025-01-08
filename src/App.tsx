@@ -8,7 +8,7 @@ import {WavyBackgroundDemo} from "@/components/ui/WavyBackgroundDemo.tsx";
 import {HeroSection} from "@/components/HeroSection.tsx";
 import {FloatingNavDemo} from "@/components/ui/FloatingNavDemo.tsx";
 import Footer from "@/components/Footer.tsx";
-import React, {useEffect} from "react";
+import  {useEffect} from "react";
 import MouseCircle from "@/components/MouseCircle.tsx";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
@@ -25,7 +25,7 @@ function App() {
         <>
             <div className="bg-black h-full w-full select-none">
                 <Meteors number={3} />
-                {/*<MouseCircle />*/}
+                <MouseCircle />
                 <Analytics/>
                 <SpeedInsights/>
             </div>
