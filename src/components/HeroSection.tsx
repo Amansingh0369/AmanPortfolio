@@ -5,7 +5,6 @@ import { NeonGradientCard } from "@/components/ui/neon-gradient-card.tsx";
 import { BorderBeam } from "@/components/ui/border-beam.tsx";
 import StatusToggle from "@/components/StatusToggle.tsx";
 import TimeDisplay from "@/components/ui/TimeDisplay.tsx";
-import Particles from "@/components/ui/particles.tsx";
 import { LinkPreview } from "@/components/ui/link-preview.tsx";
 import SplineWithLoading from "@/components/SplineWithLoading.tsx";
 import { IoLogoGithub, IoLogoTwitter, IoMail, IoLogoLinkedin, IoDocument } from 'react-icons/io5';
@@ -169,14 +168,6 @@ export function HeroSection() {
                     </div>
                 </div>
             </div>
-
-            <Particles
-                className="absolute inset-0 z-100 "
-                quantity={400}
-                ease={80}
-                color={"white"}
-                refresh
-            />
         </>
     );
 }

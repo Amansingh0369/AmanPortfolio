@@ -8,10 +8,12 @@ import {WavyBackgroundDemo} from "@/components/ui/WavyBackgroundDemo.tsx";
 import {HeroSection} from "@/components/HeroSection.tsx";
 import {FloatingNavDemo} from "@/components/ui/FloatingNavDemo.tsx";
 import Footer from "@/components/Footer.tsx";
-import {useEffect} from "react";
+import React, {useEffect} from "react";
 import MouseCircle from "@/components/MouseCircle.tsx";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import {Codework} from "@/components/ui/SparklesPreview.tsx";
+import {SparklesCore} from "@/components/ui/sparkles.tsx";
 
 function App() {
     useEffect(() => {
@@ -23,14 +25,23 @@ function App() {
         <>
             <div className="bg-black h-full w-full select-none">
                 <Meteors number={3} />
-                <MouseCircle />
+                {/*<MouseCircle />*/}
                 <Analytics/>
                 <SpeedInsights/>
             </div>
             <div className="bg-black text-black w-full h-fit">
-                {/* <BackgroundCellCore /> */}
-                x
+
                 <div className="relative z-50 cursor-auto max-w-full bg-clip-text">
+                    <div className="z-0 absolute inset-0">
+                        <SparklesCore
+                            background="transparent"
+                            minSize={0.4}
+                            maxSize={1}
+                            particleDensity={10}
+                            className="w-full h-full"
+                            particleColor="#FFFFFF"
+                        />
+                    </div>
                     {/* Hero Section */}
                     <HeroSection />
                     {/* Skills */}
@@ -49,6 +60,9 @@ function App() {
                             </div>
                         </div>
                     </div>
+
+                    {/*{code work}*/}
+                    <Codework/>
 
                     {/* Project Section */}
                     <div id="projects" className="text-white bg-black select-none">
