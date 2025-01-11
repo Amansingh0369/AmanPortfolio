@@ -1,3 +1,5 @@
+import { BorderBeam } from "@/components/ui/border-beam.tsx";
+
 export function Codework() {
     return (
         <div className="h-fit mb-10  w-full bg-black flex flex-col items-center space-y-1  overflow-hidden rounded-md">
@@ -30,7 +32,10 @@ export function Codework() {
                 </div>
             </div>
             <div className="w-[95%] md:w-[85%] lg:w-[80%] mx-auto relative">
-                <div className="backdrop-blur-[0.5px] border-2 border-neutral-700 text-white p-6 md:p-8 lg:p-12 rounded-3xl shadow-2xl hover:border-neutral-600 transition-all duration-300">
+
+                <div className="backdrop-blur-[0.5px] border border-neutral-700 text-white p-6 md:p-8 lg:p-12 rounded-3xl shadow-2xl hover:border-neutral-600 transition-all duration-300">
+                <BorderBeam anchor={90} size={270} duration={10} delay={1} colorFrom={"white"} colorTo={"#cba6f7"} className="rounded-2xl  sm:block" />
+
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0">
                         <div className="flex items-center space-x-4 md:space-x-6">
                             <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gray-600 ring-2 md:ring-4 ring-purple-500">

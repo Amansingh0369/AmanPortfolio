@@ -19,7 +19,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="pt-10 z-100 px-6 sm:p-8 bg-black text-white border-t border-gray-600">
+        <footer className="pt-10 z-100 px-6 sm:p-8 bg-black text-white border-t border-gray-600 ">
             <div className="container mx-auto flex flex-col md:flex-row justify-around items-center">
                 <div className="absolute sm:left-[66rem] sm:bottom-8 ">
                     <div className="flex space-x-6">
