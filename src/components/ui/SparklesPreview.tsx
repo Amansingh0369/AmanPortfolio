@@ -2,7 +2,7 @@ import { BorderBeam } from "@/components/ui/border-beam.tsx";
 
 export function Codework() {
     return (
-        <div className="h-fit mb-10  w-full bg-black flex flex-col items-center space-y-1  overflow-hidden rounded-md">
+        <div className="h-fit mb-10 select-none  w-full bg-black flex flex-col items-center space-y-1  overflow-hidden rounded-md">
             <div>
                 <h1 className="md:text-4xl  mt-14 text-4xl lg:text-6xl font-bold text-center bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text relative text-transparent relative z-20">
                     CODE : WORK
