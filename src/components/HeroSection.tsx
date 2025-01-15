@@ -108,9 +108,9 @@ export function HeroSection() {
                             </div>
 
                             <div className="group relative pb-4">
-                                <LinkPreview url={"https://drive.google.com/file/d/1D26WgGSi3xGFPN0qmXqUZkbjSdd2vow6/view"} className="z-100 relative">
+                                <LinkPreview url={"https://drive.google.com/file/d/1eUy8P66dldoKKCx37E7de77nLyCfE19K/view"} className="z-100 relative">
                                     <a
-                                        href="https://drive.google.com/file/d/1D26WgGSi3xGFPN0qmXqUZkbjSdd2vow6/view"
+                                        href="https://drive.google.com/file/d/1eUy8P66dldoKKCx37E7de77nLyCfE19K/view"
                                         target="_blank" rel="noopener noreferrer"
                                         className="text-lg font-medium text-blue-600 hover:underline"
                                     >
