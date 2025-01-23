@@ -31,10 +31,10 @@ export function Codework() {
 
                 </div>
             </div>
-            <div className="w-[95%] md:w-[85%] lg:w-[80%] mx-auto relative">
+            <div className="w-[95%] md:w-[85%] lg:w-[80%] space-y-20 mx-auto relative">
 
                 <div className="backdrop-blur-[0.5px] border border-neutral-700 text-white p-6 md:p-8 lg:p-12 rounded-3xl shadow-2xl hover:border-neutral-600 transition-all duration-300">
-                <BorderBeam anchor={90} size={270} duration={10} delay={1} colorFrom={"white"} colorTo={"#cba6f7"} className="rounded-2xl  sm:block" />
+                    <BorderBeam anchor={90} size={270} duration={10} delay={1} colorFrom={"white"} colorTo={"#cba6f7"} className="rounded-2xl  sm:block" />
 
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0">
                         <div className="flex items-center space-x-4 md:space-x-6">
@@ -43,7 +43,78 @@ export function Codework() {
                             </div>
                             <span className="font-bold text-2xl md:text-3xl lg:text-4xl bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Aman</span>
                         </div>
-                        <div className="text-base md:text-md lg:text-md text-[#a6f1a6] font-medium">Remote • Dec 2024 - Present</div>
+                        <div className="text-base md:text-md lg:text-md text-[#a6f1a6] font-medium">Remote • Jan 2025 - Present</div>
+                    </div>
+                    <div className="mt-6 md:mt-8">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text relative text-transparent">Freelancer</h1>
+                        <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#cba6f7] mt-2 md:mt-4">
+                            Full Stack Engineer
+                        </h2>
+                        <ul className="mt-6 md:mt-8 space-y-3 md:space-y-4 text-base md:text-lg group relative  ">
+                            <li className="flex items-start space-x-3 hover:translate-x-2 transition-all duration-300">
+                                <span className="text-purple-400 text-xl md:text-2xl flex-shrink-0">•</span>
+                                <span className="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text relative text-transparent">Developed a production-level website leveraging TypeScript, Next.js for a seamless and responsive user experience. <a className="font-bold text-green-600 hover:cursor-pointer z-1000" href="https://annveda.com" target="_blank" rel="noopener noreferrer">AnnVeda.com</a> </span>
+                            </li>
+                            <li className="flex items-start space-x-3 hover:translate-x-2 transition-all duration-300">
+                                <span className="text-purple-400 text-xl md:text-2xl flex-shrink-0">•</span>
+                                <span className="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text relative text-transparent">Integrated AOS (Animate On Scroll) for smooth animations, enhancing visual appeal and user engagement.</span>
+                            </li>
+                            <li className="flex items-start space-x-3 hover:translate-x-2 transition-all duration-300">
+                                <span className="text-purple-400 text-xl md:text-2xl flex-shrink-0">•</span>
+                                <span className="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text relative text-transparent">Optimized website performance and SEO to ensure faster load times and higher search rankings.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="mt-6 md:mt-8 text-sm md:text-base lg:text-md text-[#8be8fd] flex flex-wrap gap-2 md:gap-3">
+                        <div className="group relative">
+                            <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">Javascript</div>
+                            <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7] rounded-full hover:bg-[#3d3d40] transition-colors text-sm">Next.js</div>
+                        </div>
+                        <div className="group relative">
+                            <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">React</div>
+                            <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7] rounded-full hover:bg-[#3d3d40] transition-colors text-sm">Javascript</div>
+                        </div>
+                        <div className="group relative">
+                            <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all text-center after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">RESTful api</div>
+                            <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7] text-center rounded-full hover:bg-[#3d3d40] transition-colors text-sm">AOS</div>
+                        </div>
+                        <div className="group relative">
+                            <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">Nodejs</div>
+                            <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7] rounded-full hover:bg-[#3d3d40] transition-colors text-sm">Tailwind CSS</div>
+                        </div>
+                        <div className="group relative">
+                            <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">MySql</div>
+                            <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7]  rounded-full hover:bg-[#3d3d40] transition-colors text-sm">MySql</div>
+                        </div>
+                        <div className="group relative">
+                            <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">Websockets</div>
+                            <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7] rounded-full hover:bg-[#3d3d40] transition-colors text-sm">SEO</div>
+                        </div>
+                        {/*<div className="group relative">*/}
+                        {/*    <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">Linux</div>*/}
+                        {/*    <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7]  rounded-full hover:bg-[#3d3d40] transition-colors text-sm">Linux</div>*/}
+                        {/*</div>*/}
+                        {/*<div className="group relative">*/}
+                        {/*    <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">aapanel</div>*/}
+                        {/*    <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7] rounded-full hover:bg-[#3d3d40] transition-colors text-sm">aapanel</div>*/}
+                        {/*</div>*/}
+                    </div>
+                </div>
+
+
+                {/*second code work*/}
+
+                <div className="backdrop-blur-[0.5px] border border-neutral-700 text-white p-6  md:p-8 lg:p-12 rounded-3xl shadow-2xl hover:border-neutral-600 transition-all duration-300">
+                    <BorderBeam anchor={90} size={270} duration={10} delay={1} colorFrom={"white"} colorTo={"#cba6f7"} className="rounded-2xl  sm:block" />
+
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0">
+                        <div className="flex items-center space-x-4 md:space-x-6">
+                            <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gray-600 ring-2 md:ring-4 ring-purple-500">
+                                <img src="/assets/avatar-1.png" alt="amanhereee" className="w-full h-full rounded-full" />
+                            </div>
+                            <span className="font-bold text-2xl md:text-3xl lg:text-4xl bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Aman</span>
+                        </div>
+                        <div className="text-base md:text-md lg:text-md text-[#a6f1a6] font-medium">Remote • Dec 2024 - Dec 2024</div>
                     </div>
                     <div className="mt-6 md:mt-8">
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text relative text-transparent">Freelancer</h1>
@@ -95,15 +166,12 @@ export function Codework() {
                             <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7]  rounded-full hover:bg-[#3d3d40] transition-colors text-sm">Linux</div>
                         </div>
                         <div className="group relative">
-                            <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent text-center after:border-t-[#4a3f69]">Discord API</div>
-                            <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7] rounded-full hover:bg-[#3d3d40] transition-colors text-sm">Discord API</div>
-                        </div>
-                        <div className="group relative">
                             <div className="absolute hidden group-hover:block bottom-full mb-4 px-3 py-1 md:px-4 md:py-2 bg-[#4a3f69] rounded-full text-[#ffd9eb] shadow-lg transform -translate-y-1 transition-all after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-8 after:border-transparent after:border-t-[#4a3f69]">aapanel</div>
                             <div className="px-2 py-0.5 md:px-3 md:py-1.5 bg-[#2d2d30] text-[#cba6f7] rounded-full hover:bg-[#3d3d40] transition-colors text-sm">aapanel</div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     );
