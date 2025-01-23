@@ -14,7 +14,6 @@ import {
     SiGit,
     SiMysql,
     SiAmazonec2,
-    SiGithub,
     SiPrisma,
     SiShadcnui,
     SiNginx,
