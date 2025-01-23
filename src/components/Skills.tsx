@@ -19,7 +19,7 @@ import {
     SiShadcnui,
     SiNginx,
     SiVercel,
-    SiRender,
+    SiRender, SiNextdotjs,
 } from 'react-icons/si';
 import {FaCloud, FaJava} from 'react-icons/fa';
 import {IoSettingsOutline} from "react-icons/io5";
@@ -60,6 +60,10 @@ const Skills: React.FC = () => {
                 {/*<h3 className="text-sm/[1.875rem] uppercase font-mono tracking-4 m-4 text-center bg-black">Web Development</h3>*/}
                 <div className="flex flex-wrap sm:gap-20 gap-y-6 justify-center">
                     <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
+                        <SiNextdotjs className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">NextJS</span>
+                    </div>
+                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
                         <SiReact className="text-4xl text-neutral-400" />
                         <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">ReactJS</span>
                     </div>
@@ -75,10 +79,6 @@ const Skills: React.FC = () => {
                         <IoSettingsOutline  className="text-4xl text-neutral-400" />
                         <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">REST APIs</span>
                     </div>
-                    <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
-                        <SiTailwindcss className="text-4xl text-neutral-400" />
-                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">Tailwind CSS</span>
-                    </div>
 
                 </div>
             </div>
@@ -88,8 +88,8 @@ const Skills: React.FC = () => {
                 {/*<h3 className="text-sm/[1.875rem] uppercase font-mono tracking-4 m-4 text-center bg-black">Databases - ORM</h3>*/}
                 <div className="flex flex-wrap sm:gap-12 gap-y-6 justify-center">
                     <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
-                        <SiShadcnui className="text-4xl text-neutral-400"/>
-                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">ShadCN</span>
+                        <SiTailwindcss className="text-4xl text-neutral-400" />
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">Tailwind CSS</span>
                     </div>
                     <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
                         <SiMongodb className="text-4xl text-neutral-400" />
@@ -158,9 +158,13 @@ const Skills: React.FC = () => {
                         <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">Git</span>
                     </div>
                     <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
-                        <SiGithub className="text-4xl text-neutral-400" />
-                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">GitHub</span>
+                        <SiShadcnui className="text-4xl text-neutral-400"/>
+                        <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">ShadCN</span>
                     </div>
+                    {/*<div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">*/}
+                    {/*    <SiGithub className="text-4xl text-neutral-400" />*/}
+                    {/*    <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">GitHub</span>*/}
+                    {/*</div>*/}
                     <div className="flex items-center space-x-2 px-4 py-4 rounded-lg hover:bg-neutral-900 hover:scale-110 transition-transform duration-300">
                         {/*<FaPlus className="text-4xl text-neutral-400" />*/}
                         <span className="text-lg font-bold font-mono bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">& More</span>

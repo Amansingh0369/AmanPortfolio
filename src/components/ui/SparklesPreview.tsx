@@ -53,7 +53,7 @@ export function Codework() {
                         <ul className="mt-6 md:mt-8 space-y-3 md:space-y-4 text-base md:text-lg group relative  ">
                             <li className="flex items-start space-x-3 hover:translate-x-2 transition-all duration-300">
                                 <span className="text-purple-400 text-xl md:text-2xl flex-shrink-0">•</span>
-                                <span className="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text relative text-transparent">Developed a production-level website leveraging TypeScript, Next.js for a seamless and responsive user experience. <a className="font-bold text-green-600 hover:cursor-pointer z-1000" href="https://annveda.com" target="_blank" rel="noopener noreferrer">AnnVeda.com</a> </span>
+                                <span className="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text relative text-transparent">Built Annveda.com, a fully functional production website using TypeScript, Next.js designed for high reliability and scalability. <a className="font-bold text-green-600 hover:cursor-pointer z-1000" href="https://annveda.com" target="_blank" rel="noopener noreferrer">AnnVeda.com</a> </span>
                             </li>
                             <li className="flex items-start space-x-3 hover:translate-x-2 transition-all duration-300">
                                 <span className="text-purple-400 text-xl md:text-2xl flex-shrink-0">•</span>
@@ -61,7 +61,7 @@ export function Codework() {
                             </li>
                             <li className="flex items-start space-x-3 hover:translate-x-2 transition-all duration-300">
                                 <span className="text-purple-400 text-xl md:text-2xl flex-shrink-0">•</span>
-                                <span className="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text relative text-transparent">Optimized website performance and SEO to ensure faster load times and higher search rankings.</span>
+                                <span className="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text relative text-transparent">Ensured optimal performance, responsive design, and accessibility for a professional-grade web presence.</span>
                             </li>
                         </ul>
                     </div>
