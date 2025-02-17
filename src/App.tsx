@@ -14,6 +14,7 @@ import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import {Codework} from "@/components/ui/SparklesPreview.tsx";
 import {SparklesCore} from "@/components/ui/sparkles.tsx";
+import { InfiniteMovingCardsDemo } from './components/InfiniteMovingCardsDemo';
 
 function App() {
     useEffect(() => {
@@ -63,6 +64,9 @@ function App() {
 
                     {/*{code work}*/}
                     <Codework/>
+
+                    {/* {testimonials} */}
+                    <InfiniteMovingCardsDemo/>
 
                     {/* Project Section */}
                     <div id="projects" className="text-white bg-black select-none">

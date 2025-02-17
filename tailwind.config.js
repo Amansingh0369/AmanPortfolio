@@ -45,8 +45,16 @@ export default {
 				shine: "shine var(--duration) infinite linear",
 				pinch: "pinch 0.3s ease-out",
 				"scroll-left": "scroll-left 20s linear infinite",
+				scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+
 			},
 			keyframes: {
+				scroll: {
+					to: {
+					  transform: "translate(calc(-50% - 0.5rem))",
+					},
+				  },
 				ripple: {
 					"0%, 100%": {
 						transform: "translate(-50%, -50%) scale(1)",
